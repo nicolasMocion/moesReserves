@@ -9,8 +9,7 @@ public class Evento {
     private String description;
     private String fecha;
     private String maxCapacity;
-
-    private Empleado encargado;
+    private String encargado;
 
     ArrayList<Reserva> listaReservasEvento = new ArrayList<Reserva>();
 
@@ -66,13 +65,14 @@ public class Evento {
         this.listaReservasEvento = listaReservasEvento;
     }
 
-    public Empleado getEncargado() {
+    public String getEncargado() {
         return encargado;
     }
 
-    public void setEncargado(Empleado encargado) {
+    public void setEncargado(String encargado) {
         this.encargado = encargado;
     }
+
 
 
 }

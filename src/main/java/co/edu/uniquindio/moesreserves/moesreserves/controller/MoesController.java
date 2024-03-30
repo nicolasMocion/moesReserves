@@ -10,5 +10,4 @@ public class MoesController implements IMoesControllerService {
         modelFactoryController = ModelFactoryController.getInstance();
     }
 
-
 }

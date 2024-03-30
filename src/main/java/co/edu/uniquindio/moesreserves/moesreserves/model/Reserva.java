@@ -1,14 +1,16 @@
 package co.edu.uniquindio.moesreserves.moesreserves.model;
 
+import java.util.ArrayList;
+
 public class Reserva {
 
     private String id;
-    private Usuario usuario;
-    private Evento evento;
+    private String usuario;
+    private String evento;
     private String fechaDeSolicitud;
-    private Estado estado;
+    private String estado;
 
-    public Reserva(){
+    public Reserva() {
 
     }
 
@@ -20,22 +22,6 @@ public class Reserva {
         this.id = id;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
-
-    public Evento getEvento() {
-        return evento;
-    }
-
-    public void setEvento(Evento evento) {
-        this.evento = evento;
-    }
-
     public String getFechaDeSolicitud() {
         return fechaDeSolicitud;
     }
@@ -44,11 +30,29 @@ public class Reserva {
         this.fechaDeSolicitud = fechaDeSolicitud;
     }
 
-    public Estado getEstado() {
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getEvento() {
+        return evento;
+    }
+
+    public void setEvento(String evento) {
+        this.evento = evento;
+    }
+
+    public String getEstado() {
         return estado;
     }
 
-    public void setEstado(Estado estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
+
     }
+
 }

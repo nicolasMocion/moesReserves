@@ -11,6 +11,8 @@ import java.util.ArrayList;
 public interface IReservaService {
     Reserva crearReserva(String id, Usuario usuario, Evento evento, String fechaDeSolicitud, Estado estado) throws ReservaException;
 
+    Reserva crearReserva(String id, String usuario, String evento, String fechaDeSolicitud, String estado) throws ReservaException;
+
     boolean actualizarReserva(String id, Reserva reserva) throws ReservaException;
 
     Boolean eliminarReserva(String id) throws ReservaException;

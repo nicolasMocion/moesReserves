@@ -6,8 +6,10 @@ import co.edu.uniquindio.moesreserves.moesreserves.model.Evento;
 
 public record ReservaDto(
         String id,
-        Usuario usuario,
-        Evento evento,
         String fechaDeSolicitud,
-        Estado estado) {
+        String usuario,
+        String evento,
+        String estado
+) {
+
 }

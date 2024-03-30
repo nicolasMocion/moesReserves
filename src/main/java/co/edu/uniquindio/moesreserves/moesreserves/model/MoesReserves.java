@@ -79,8 +79,8 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
         if(empleadoActual == null)
             throw new EmpleadoException("El empleado a actualizar no existe");
         else{
-            empleadoActual.setId(empleado.getId());
-            empleadoActual.setName(empleado.getName());
+            empleadoActual.setId(empleado.getName());
+            empleadoActual.setName(empleado.getId());
             empleadoActual.setEmail(empleado.getEmail());
             return true;
         }
@@ -163,8 +163,8 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
         if(usuarioActual == null)
             throw new UsuarioException("El Usuario a actualizar no existe");
         else{
-            usuarioActual.setId(usuario.getId());
-            usuarioActual.setName(usuario.getName());
+            usuarioActual.setName(usuario.getId());
+            usuarioActual.setId(usuario.getName());
             usuarioActual.setEmail(usuario.getEmail());
             return true;
         }
@@ -222,8 +222,12 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
         return usuarioEncontrado;
     }
 
+    public void agregarEvento(Evento nuevoEvento) throws EventoException{
+        getListaEventos().add(nuevoEvento);
+    }
+
     @Override
-    public Evento crearEvento(String id, String name, String description, String fecha, String maxCapacity, Empleado encargado) throws EventoException{
+    public Evento crearEvento(String id, String name, String description, String fecha, String maxCapacity, String encargado) throws EventoException {
         Evento nuevoEvento = null;
         boolean eventoExiste = verificarEventoExistente(id);
         if(eventoExiste){
@@ -239,9 +243,6 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
             getListaEventos().add(nuevoEvento);
         }
         return nuevoEvento;
-    }
-    public void agregarEvento(Evento nuevoEvento) throws EventoException{
-        getListaEventos().add(nuevoEvento);
     }
 
     @Override
@@ -313,9 +314,13 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
     }
 
 
+    @Override
+    public Reserva crearReserva(String id, Usuario usuario, Evento evento, String fechaDeSolicitud, Estado estado) throws ReservaException {
+        return null;
+    }
 
     @Override
-    public Reserva crearReserva(String id, Usuario usuario, Evento evento, String fechaDeSolicitud, Estado estado) throws ReservaException{
+    public Reserva crearReserva(String id, String usuario, String evento, String fechaDeSolicitud, String estado) throws ReservaException{
         Reserva nuevoReserva = null;
         boolean reservaExiste = verificarReservaExistente(id);
         if(reservaExiste){
