@@ -1,0 +1,2 @@
+Champions@@121212@@Hola@@hoy@@3@@Omar
+Ingrese el nombre@@Ingrese la id@@Ingrese la capacidad@@Ingrese el encargado@@null@@Ingrese la fecha

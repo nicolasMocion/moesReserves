@@ -3,6 +3,8 @@ module co.edu.uniquindio.moesreserves.moesreserves {
     requires javafx.fxml;
     requires org.mapstruct;
     requires org.controlsfx.controls;
+    requires java.desktop;
+    requires java.logging;
 
     opens co.edu.uniquindio.moesreserves.moesreserves to javafx.fxml;
     exports co.edu.uniquindio.moesreserves.moesreserves;

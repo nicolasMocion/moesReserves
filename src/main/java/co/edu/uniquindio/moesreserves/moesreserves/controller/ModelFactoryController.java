@@ -5,8 +5,9 @@ import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.*;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.mappers.MoesMapper;
 import co.edu.uniquindio.moesreserves.moesreserves.model.*;
 import co.edu.uniquindio.moesreserves.moesreserves.exceptions.*;
-import co.edu.uniquindio.moesreserves.moesreserves.utils.MoesUtils;
+import co.edu.uniquindio.moesreserves.moesreserves.utils.*;
 
+import java.io.IOException;
 import java.util.List;
 public class ModelFactoryController implements IModelFactoryService {
 
@@ -24,7 +25,15 @@ public class ModelFactoryController implements IModelFactoryService {
 
     public ModelFactoryController(){
         System.out.println("invocación clase singleton");
-        cargarDatosBase();
+
+        cargarResourceXML();
+
+        if(moesReserves == null){
+            cargarDatosBase();
+            guardarResourceXML();
+        }
+
+        registrarAccionesSistema("Inicio de sesión", 1, "inicioSesión");
     }
     private void cargarDatosBase(){
         moesReserves = MoesUtils.inicializarDatos();
@@ -62,6 +71,9 @@ public class ModelFactoryController implements IModelFactoryService {
             if(!moesReserves.verificarEmpleadoExistente(empleadoDto.id())) {
                 Empleado empleado = mapper.empleadoDtoToEmpleado(empleadoDto);
                 getMoesReserves().agregarEmpleado(empleado);
+                registrarAccionesSistema("Se agrego el empleado"+ empleado.getName(),1,"agregarEmpleado");
+                guardarResourceXML();
+                salvarDatosPrueba();
             }
             return true;
         }catch (EmpleadoException e){
@@ -97,6 +109,9 @@ public class ModelFactoryController implements IModelFactoryService {
             if(!moesReserves.verificarEventoExistente(eventoDto.id())) {
                 Evento evento = mapper.eventoDtoToEvento(eventoDto);
                 getMoesReserves().agregarEvento(evento);
+                registrarAccionesSistema("Se agrego el empleado"+ evento.getName(),1,"agregarEvento");
+                guardarResourceXML();
+                salvarDatosPrueba();
             }
             return true;
         }catch (EventoException e){
@@ -132,6 +147,9 @@ public class ModelFactoryController implements IModelFactoryService {
             if(!moesReserves.verificarReservaExistente(reservaDto.id())) {
                 Reserva reserva = mapper.reservaDtoToReserva(reservaDto);
                 getMoesReserves().agregarReserva(reserva);
+                registrarAccionesSistema("Se agrego el empleado"+ reserva.getId(),1,"agregarReserva");
+                guardarResourceXML();
+                salvarDatosPrueba();
             }
             return true;
         }catch (ReservaException e){
@@ -167,6 +185,9 @@ public class ModelFactoryController implements IModelFactoryService {
             if(!moesReserves.verificarUsuarioExistente(usuarioDto.id())) {
                 Usuario usuario = mapper.usuarioDtoToUsuario(usuarioDto);
                 getMoesReserves().agregarUsuario(usuario);
+                registrarAccionesSistema("Se agrego el empleado"+ usuario.getName(),1,"agregarUsuario");
+                guardarResourceXML();
+                salvarDatosPrueba();
             }
             return true;
         }catch (UsuarioException e){
@@ -196,6 +217,51 @@ public class ModelFactoryController implements IModelFactoryService {
             return false;
         }
     }
+
+
+    private void cargarDatosDesdeArchivos() {
+        moesReserves = new MoesReserves();
+        try {
+            Persistencia.cargarDatosArchivos(moesReserves);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void salvarDatosPrueba() {
+        try {
+            Persistencia.guardarEmpleados(getMoesReserves().getListaEmpleados());
+            Persistencia.guardarEventos(getMoesReserves().getListaEventos());
+            Persistencia.guardarReservas(getMoesReserves().getListaReservas());
+            Persistencia.guardarUsuarios(getMoesReserves().getListaUsuarios());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void cargarResourceXML() {
+        moesReserves = Persistencia.cargarRecursoMoesReservesXML();
+    }
+
+    private void guardarResourceXML() {
+        Persistencia.guardarRecursoMoesReservesXML(moesReserves);
+    }
+
+    private void cargarResourceBinario() {
+        moesReserves = Persistencia.cargarRecursoMoesReservesBinario();
+    }
+
+    private void guardarResourceBinario() {
+        Persistencia.guardarRecursoMoesReservesBinario(moesReserves);
+    }
+
+    public void registrarAccionesSistema(String mensaje, int nivel, String accion) {
+        Persistencia.guardaRegistroLog(mensaje, nivel, accion);
+    }
+
+
+
+
 
 
 

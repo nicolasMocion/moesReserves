@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="19.0.2" class="java.beans.XMLDecoder">
+ <object class="co.edu.uniquindio.moesreserves.moesreserves.model.MoesReserves" id="MoesReserves0">
+  <void property="listaEmpleados">
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Empleado">
+     <void property="email">
+      <string>saksaoks</string>
+     </void>
+     <void property="id">
+      <string>123</string>
+     </void>
+     <void property="name">
+      <string>Omar</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Empleado">
+     <void property="email">
+      <string>Ingrese el correo</string>
+     </void>
+     <void property="id">
+      <string>Ingrese el nombre</string>
+     </void>
+     <void property="name">
+      <string>Ingrese la id</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Empleado">
+     <void property="email">
+      <string>Ingrese el correo3</string>
+     </void>
+     <void property="id">
+      <string>Ingrese la id444</string>
+     </void>
+     <void property="name">
+      <string>Ingrese el nombre2</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="listaEventos">
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Evento">
+     <void property="description">
+      <string>Hola</string>
+     </void>
+     <void property="encargado">
+      <string>Omar</string>
+     </void>
+     <void property="fecha">
+      <string>hoy</string>
+     </void>
+     <void property="id">
+      <string>121212</string>
+     </void>
+     <void property="maxCapacity">
+      <string>3</string>
+     </void>
+     <void property="name">
+      <string>Champions</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Evento">
+     <void property="description">
+      <string>Ingrese la capacidad</string>
+     </void>
+     <void property="encargado">
+      <string>Ingrese la fecha</string>
+     </void>
+     <void property="fecha">
+      <string>Ingrese el encargado</string>
+     </void>
+     <void property="id">
+      <string>Ingrese la id</string>
+     </void>
+     <void property="maxCapacity">
+      <string>null</string>
+     </void>
+     <void property="name">
+      <string>Ingrese el nombre</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="listaReservas">
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
+     <void property="estado">
+      <string>main</string>
+     </void>
+     <void property="evento">
+      <string>main</string>
+     </void>
+     <void property="fechaDeSolicitud">
+      <string>main</string>
+     </void>
+     <void property="id">
+      <string>232</string>
+     </void>
+     <void property="usuario">
+      <string>omar</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
+     <void property="estado">
+      <string>Ingrese el estado</string>
+     </void>
+     <void property="evento">
+      <string>Ingrese el estado</string>
+     </void>
+     <void property="fechaDeSolicitud">
+      <string>Ingrese el estado</string>
+     </void>
+     <void property="id">
+      <string>Ingrese la id</string>
+     </void>
+     <void property="usuario">
+      <string>Ingrese el usuario</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="listaUsuarios">
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
+     <void property="email">
+      <string>2323</string>
+     </void>
+     <void property="id">
+      <string>1212</string>
+     </void>
+     <void property="name">
+      <string>2323</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
+     <void property="email">
+      <string>Ingrese la id</string>
+     </void>
+     <void property="id">
+      <string>Ingrese el nombre</string>
+     </void>
+     <void property="name">
+      <string>Ingrese la id</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

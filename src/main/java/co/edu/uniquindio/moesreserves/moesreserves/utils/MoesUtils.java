@@ -18,20 +18,20 @@ public class MoesUtils {
         Reserva reserva = new Reserva();
 
         reserva.setId("232");
-        reserva.setEstado("OK");
         reserva.setUsuario("omar");
         reserva.setEvento("main");
         reserva.setFechaDeSolicitud("hoy");
+        reserva.setEstado("OK");
         moesReserves.getListaReservas().add(reserva);
 
         Evento evento = new Evento();
 
-        evento.setFecha("hoy");
-        evento.setDescription("Hola");
-        evento.setMaxCapacity("3");
-        evento.setEncargado("Omar");
         evento.setId("121212");
         evento.setName("Champions");
+        evento.setDescription("Hola");
+        evento.setFecha("hoy");
+        evento.setMaxCapacity("3");
+        evento.setEncargado("Omar");
         moesReserves.getListaEventos().add(evento);
 
         Usuario usuario = new Usuario();
