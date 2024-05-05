@@ -28,3 +28,51 @@ May 02, 2024 9:12:31 PM co.edu.uniquindio.moesreserves.moesreserves.utils.Archiv
 INFO: agregarEmpleado,Se agrego el empleadoIngrese el nombre2,2024-05-02
 May 02, 2024 9:12:52 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
 INFO: inicioSesión,Inicio de sesión,2024-05-02
+May 04, 2024 1:03:15 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-04
+May 04, 2024 1:06:55 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoomarG,2024-05-04
+May 04, 2024 1:08:12 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoHomero Simpson,2024-05-04
+May 04, 2024 1:09:19 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEvento,Se agrego el empleado3,2024-05-04
+May 04, 2024 1:09:39 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarUsuario,Se agrego el empleadoLisa,2024-05-04
+May 04, 2024 1:11:30 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleado3,2024-05-04
+May 04, 2024 1:29:11 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-04
+May 05, 2024 11:53:22 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05
+May 05, 2024 12:13:01 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05
+May 05, 2024 12:17:01 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05
+May 05, 2024 12:17:25 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarUsuario,Se agrego el empleadonicolas,2024-05-05
+May 05, 2024 12:49:39 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05
+May 05, 2024 12:51:38 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05
+May 05, 2024 12:52:02 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarUsuario,Se agrego el empleadoNicolas,2024-05-05
+May 05, 2024 12:52:45 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05
+May 05, 2024 1:26:46 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05
+May 05, 2024 3:08:45 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05
+May 05, 2024 3:09:01 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarUsuario,Se agrego el empleadoSantaigo,2024-05-05
+May 05, 2024 3:09:21 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05
+May 05, 2024 5:32:17 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05
+May 05, 2024 5:48:32 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05
+May 05, 2024 5:49:26 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05
+May 05, 2024 6:55:46 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05
+May 05, 2024 6:56:45 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-05

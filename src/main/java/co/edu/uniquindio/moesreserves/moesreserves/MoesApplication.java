@@ -1,6 +1,6 @@
 package co.edu.uniquindio.moesreserves.moesreserves;
 
-import co.edu.uniquindio.moesreserves.moesreserves.viewController.MoesViewController;
+import co.edu.uniquindio.moesreserves.moesreserves.viewController.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -24,9 +24,9 @@ public class MoesApplication extends Application {
     public void mostrarVentanaPrincipal() {
         try{
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MoesApplication.class.getResource("MoesView.fxml"));
+            loader.setLocation(MoesApplication.class.getResource("MoesSelect.fxml"));
             AnchorPane rootLayout = (AnchorPane) loader.load();
-            MoesViewController moesViewController = loader.getController();
+            MoesSelectViewController moesSelectViewController = loader.getController();
             Scene scene = new Scene(rootLayout);
 
             primaryStage.setScene(scene);

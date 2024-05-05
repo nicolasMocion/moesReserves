@@ -26,6 +26,7 @@
                         <TextField fx:id="txtEvento" layoutX="118.0" layoutY="174.0" prefHeight="25.0" prefWidth="251.0" />
                         <TextField fx:id="txtEstado" layoutX="464.0" layoutY="23.0" prefHeight="25.0" prefWidth="251.0" />
 
+
                         <Button fx:id="btnActualizar" layoutX="464.0" layoutY="236.0" mnemonicParsing="false" onAction="#actualizarReservaAction" prefHeight="27.0" prefWidth="100.0" text="Actualizar" />
                         <Button fx:id="btnNuevo" layoutX="83.0" layoutY="236.0" mnemonicParsing="false" onAction="#nuevoReservaAction" prefHeight="27.0" prefWidth="100.0" text="Nuevo" />
                         <Button fx:id="btnAgregar" layoutX="283.0" layoutY="236.0" mnemonicParsing="false" onAction="#agregarReservaAction" prefHeight="27.0" prefWidth="100.0" text="Agregar" />

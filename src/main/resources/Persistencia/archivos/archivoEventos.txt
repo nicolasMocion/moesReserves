@@ -1,2 +1,3 @@
 Champions@@121212@@Hola@@hoy@@3@@Omar
 Ingrese el nombre@@Ingrese la id@@Ingrese la capacidad@@Ingrese el encargado@@null@@Ingrese la fecha
+3@@Isotopos vs Shellbiville@@40@@Homero@@null@@24-02-2024

@@ -31,13 +31,13 @@
    <void method="add">
     <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Empleado">
      <void property="email">
-      <string>Ingrese el correo3</string>
+      <string>adaasd@gmail.com</string>
      </void>
      <void property="id">
-      <string>Ingrese la id444</string>
+      <string>1092850934</string>
      </void>
      <void property="name">
-      <string>Ingrese el nombre2</string>
+      <string>Homero Simpson</string>
      </void>
     </object>
    </void>
@@ -87,6 +87,25 @@
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Evento">
+     <void property="description">
+      <string>40</string>
+     </void>
+     <void property="encargado">
+      <string>24-02-2024</string>
+     </void>
+     <void property="fecha">
+      <string>Homero</string>
+     </void>
+     <void property="id">
+      <string>Isotopos vs Shellbiville</string>
+     </void>
+     <void property="name">
+      <string>3</string>
+     </void>
+    </object>
+   </void>
   </void>
   <void property="listaReservas">
    <void method="add">
@@ -127,6 +146,25 @@
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
+     <void property="estado">
+      <string>Activa</string>
+     </void>
+     <void property="evento">
+      <string>2</string>
+     </void>
+     <void property="fechaDeSolicitud">
+      <string>4/05/2024</string>
+     </void>
+     <void property="id">
+      <string>3</string>
+     </void>
+     <void property="usuario">
+      <string>23</string>
+     </void>
+    </object>
+   </void>
   </void>
   <void property="listaUsuarios">
    <void method="add">
@@ -152,6 +190,58 @@
      </void>
      <void property="name">
       <string>Ingrese la id</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
+     <void property="email">
+      <string>lisa@Simpson.com</string>
+     </void>
+     <void property="id">
+      <string>23</string>
+     </void>
+     <void property="name">
+      <string>Lisa</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
+     <void property="email">
+      <string>sdsdsds@grd</string>
+     </void>
+     <void property="id">
+      <string>Omarsdsdsd</string>
+     </void>
+     <void property="name">
+      <string>nicolas</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
+     <void property="email">
+      <string>Bustos</string>
+     </void>
+     <void property="id">
+      <string>Osorio</string>
+     </void>
+     <void property="name">
+      <string>Nicolas</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
+     <void property="email">
+      <string>asdasdasda</string>
+     </void>
+     <void property="id">
+      <string>1029292</string>
+     </void>
+     <void property="name">
+      <string>Santaigo</string>
      </void>
     </object>
    </void>
