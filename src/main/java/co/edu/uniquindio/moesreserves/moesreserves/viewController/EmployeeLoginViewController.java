@@ -1,6 +1,7 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
 import co.edu.uniquindio.moesreserves.moesreserves.MoesApplication;
+import co.edu.uniquindio.moesreserves.moesreserves.controller.EmpleadoController;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.UsuarioController;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.UsuarioDto;
 import javafx.collections.FXCollections;
@@ -23,13 +24,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
 
-public class LoginViewController {
+public class EmployeeLoginViewController {
 
-    Properties users = new Properties();
+    Properties empleados = new Properties();
 
-    UsuarioController usuarioControllerService;
-
-    private String user;
+    EmpleadoController empleadoControllerService;
 
     @FXML
     private Button loginBttn;
@@ -43,15 +42,15 @@ public class LoginViewController {
 
     @FXML
     void initialize() {
-        usuarioControllerService = new UsuarioController();
-        obtenerUsuarios();
+        empleadoControllerService = new EmpleadoController();
+        obtenerEmpleados();
     }
 
 
-    private void obtenerUsuarios() {
+    private void obtenerEmpleados() {
 
         try {
-            users.load(new FileInputStream("src/main/resources/Login.properties"));
+            empleados.load(new FileInputStream("src/main/resources/Login_employee.properties"));
         } catch (IOException e) {
             System.err.println("Error reading user data from the property file.");
             return;
@@ -62,19 +61,13 @@ public class LoginViewController {
         String enteredId = Idretriever.getText().trim();
         String enteredPassword = passwordRetriever.getText().trim();
 
-        user = enteredId;
-
-        if (users.containsKey(enteredId) && users.getProperty(enteredId).equals(enteredPassword)) {
+        if (empleados.containsKey(enteredId) && empleados.getProperty(enteredId).equals(enteredPassword)) {
             System.out.println("Login successful!");
 
             try {
                 FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(MoesApplication.class.getResource("BehaviorSelect.fxml"));
+                loader.setLocation(MoesApplication.class.getResource("MoesView.fxml"));
                 AnchorPane root = loader.load();
-
-                BehaviorSelectViewController controller = loader.getController();
-                controller.setUser(enteredId);
-
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
                 stage.show();
@@ -97,12 +90,11 @@ public class LoginViewController {
     }
 
     @FXML
-    void agregarUsuarioAction(ActionEvent event) {
+    void agregarEmpleadoAction(ActionEvent event) {
         loginAction();
     }
 
 
-    public String getUser() {
-        return user;
-    }
+
+
 }

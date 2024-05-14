@@ -26,7 +26,6 @@ public interface MoesMapper {
     @IterableMapping(qualifiedByName = "empleadoToEmpleadoDto")
     List<EmpleadoDto> getEmpleadosDto( List<Empleado> listaEmpleados);
 
-
     @Named("eventoToEventoDto")
     EventoDto eventoToEventoDto(Evento evento);
     Evento eventoDtoToEvento(EventoDto eventoDto);

@@ -136,9 +136,8 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
         return empleadoEncontrado;
     }
 
-
     @Override
-    public Usuario crearUsuario(String id, String name, String email) throws UsuarioException{
+    public Usuario crearUsuario(String id, String name, String email, ArrayList<Reserva> reservas) throws UsuarioException {
         Usuario nuevoUsuario = null;
         boolean usuarioExiste = verificarUsuarioExistente(id);
         if(usuarioExiste){
@@ -148,6 +147,7 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
             nuevoUsuario.setName(name);
             nuevoUsuario.setId(id);
             nuevoUsuario.setEmail(email);
+            nuevoUsuario.setListaReservas(listaReservas);
             getListaUsuarios().add(nuevoUsuario);
         }
         return nuevoUsuario;

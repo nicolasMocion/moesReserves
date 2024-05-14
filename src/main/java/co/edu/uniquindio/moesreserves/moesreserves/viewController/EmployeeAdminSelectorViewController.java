@@ -1,42 +1,36 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
 import co.edu.uniquindio.moesreserves.moesreserves.MoesApplication;
-
-import co.edu.uniquindio.moesreserves.moesreserves.*;
-
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 
-public class MoesSelectViewController {
+public class EmployeeAdminSelectorViewController {
 
-    private Stage primaryStage;
-
-    private BorderPane rootLayout;
     @FXML
     private Button adminBttn;
 
     @FXML
-    private Button userBttn;
+    private Button employeeBttn;
+
 
     @FXML
     void initialize() {
         adminBttn.setOnAction(this::handleAdminButton);
-        userBttn.setOnAction(this::handleUserButton);
+        employeeBttn.setOnAction(this::handleEmployeeButton);
     }
 
     private void handleAdminButton(ActionEvent event) {
-        loadWindow("EmployeeAdminSelector.fxml");
+        loadWindow("AdminLogin.fxml");
     }
-    private void handleUserButton(ActionEvent event) {
-        loadWindow("SelectUser.fxml");
+    private void handleEmployeeButton(ActionEvent event) {
+        loadWindow("EmployeeLogin.fxml");
     }
 
 
@@ -53,4 +47,5 @@ public class MoesSelectViewController {
             e.printStackTrace();
         }
     }
+
 }

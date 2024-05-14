@@ -13,9 +13,14 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.Alert.AlertType;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.net.URL;
 import java.util.Optional;
+import java.util.Properties;
 import java.util.ResourceBundle;
+
 
 public class CrearUsuarioViewController {
     UsuarioController usuarioControllerService;
@@ -34,6 +39,8 @@ public class CrearUsuarioViewController {
     @FXML
     private Button btnNuevo;
 
+    @FXML
+    private TextField txtPass;
 
     @FXML
     private TextField txtNameu;
@@ -55,13 +62,12 @@ public class CrearUsuarioViewController {
 
     @FXML
     private TableColumn<UsuarioDto, String> tcCorreoEu;
-
     @FXML
     void initialize() {
         usuarioControllerService = new UsuarioController();
-
     }
 
+    Properties properties = loadProperties("src/main/resources/Login.properties");
 
     private void initDataBinding() {
         tcNameu.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().name()));
@@ -110,6 +116,7 @@ public class CrearUsuarioViewController {
                 listaUsuariosDto.add(usuarioDto);
                 mostrarMensaje("Notificación usuario", "usuario creado", "El usuario se ha creado con éxito", AlertType.INFORMATION);
                 limpiarCamposUsuario();
+
             }else{
                 mostrarMensaje("Notificación usuario", "usuario no creado", "El usuario no se ha creado con éxito", AlertType.ERROR);
             }
@@ -121,11 +128,20 @@ public class CrearUsuarioViewController {
 
 
     private UsuarioDto construirUsuarioDto() {
+
+        String id = txtIdu.getText();
+        String password = txtPass.getText();
+
+        properties.setProperty(id, password);
+        saveProperties(properties, "src/main/resources/Login.properties");
+
         return new UsuarioDto(
                 txtNameu.getText(),
                 txtIdu.getText(),
-                txtCorreoEu.getText()
+                txtCorreoEu.getText(),
+                null
         );
+
     }
     private void limpiarCamposUsuario() {
         txtNameu.setText("");
@@ -170,6 +186,25 @@ public class CrearUsuarioViewController {
         }
     }
 
+
+    private static void saveProperties(Properties properties, String PROPERTY_FILE_PATH) {
+        try (FileOutputStream fileOutputStream = new FileOutputStream(PROPERTY_FILE_PATH)) {
+            properties.store(fileOutputStream, "New users added");
+            System.out.println("Entries added to the property file successfully.");
+        } catch (IOException e) {
+            System.err.println("Error writing to the property file: " + e.getMessage());
+        }
+    }
+
+    private static Properties loadProperties(String PROPERTY_FILE_PATH) {
+        Properties properties = new Properties();
+        try (FileInputStream fileInputStream = new FileInputStream(PROPERTY_FILE_PATH)) {
+            properties.load(fileInputStream);
+        } catch (IOException e) {
+            System.err.println("Error loading properties from the file: " + e.getMessage());
+        }
+        return properties;
+    }
 
 
 

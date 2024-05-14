@@ -1,3 +1,3 @@
-232@@omar@@main@@main@@@@main
-Ingrese la id@@Ingrese el usuario@@Ingrese el estado@@Ingrese el estado@@@@Ingrese el estado
-3@@23@@2@@4/05/2024@@@@Activa
+232@@1212@@main@@hoy@@@@OK
+Ingrese la id@@Ingrese el usuario@@Ingrese el estado@@Ingrese la fecha@@@@Ingrese el evento
+Omar@@Main@@Ok@@Hoy@@@@Omar

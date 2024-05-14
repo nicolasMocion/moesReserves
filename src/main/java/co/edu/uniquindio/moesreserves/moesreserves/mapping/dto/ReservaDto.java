@@ -12,4 +12,15 @@ public record ReservaDto(
         String estado
 ) {
 
+    public String getId() {
+        return id;
+    }
+
+    public String getUser(){
+        return usuario;
+    }
+
+
+
+
 }

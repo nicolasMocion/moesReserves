@@ -27,6 +27,8 @@ public class ModelFactoryController implements IModelFactoryService {
         System.out.println("invocación clase singleton");
 
         cargarResourceXML();
+        guardarResourceXML();
+
 
         if(moesReserves == null){
             cargarDatosBase();

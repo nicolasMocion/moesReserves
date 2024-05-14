@@ -5,13 +5,18 @@ import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.EmpleadoDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.EventoDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.ReservaDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.moesreserves.moesreserves.model.Reserva;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainMoes {
 
     public static void main(String[] args) {
         ModelFactoryController modelFactoryController = ModelFactoryController.getInstance();
+
+        ArrayList <ReservaDto> reserva = new ArrayList<>();
+
 
         EmpleadoDto empleadoDto = new EmpleadoDto(
                 "1092850934",
@@ -27,6 +32,8 @@ public class MainMoes {
                 "Omar"
         );
 
+        reserva.add(reservaDto);
+
         EventoDto eventoDto = new EventoDto(
                 "23232",
                 "Chamipois",
@@ -40,7 +47,9 @@ public class MainMoes {
 
                 "211212",
                 "Omarr",
-                "SKFOSKDOSKD"
+                "SKFOSKDOSKD",
+                reserva
+
         );
 
         if(modelFactoryController.agregarEmpleado(empleadoDto)){

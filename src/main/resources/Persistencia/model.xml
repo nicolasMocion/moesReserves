@@ -21,23 +21,23 @@
       <string>Ingrese el correo</string>
      </void>
      <void property="id">
-      <string>Ingrese el nombre</string>
+      <string>Ingrese la id</string>
      </void>
      <void property="name">
-      <string>Ingrese la id</string>
+      <string>Ingrese el nombre</string>
      </void>
     </object>
    </void>
    <void method="add">
     <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Empleado">
      <void property="email">
-      <string>adaasd@gmail.com</string>
+      <string>546@fkeofe</string>
      </void>
      <void property="id">
-      <string>1092850934</string>
+      <string>Omar</string>
      </void>
      <void property="name">
-      <string>Homero Simpson</string>
+      <string>1092850934</string>
      </void>
     </object>
    </void>
@@ -77,32 +77,35 @@
       <string>Ingrese el encargado</string>
      </void>
      <void property="id">
-      <string>Ingrese la id</string>
+      <string>Ingrese el nombre</string>
      </void>
      <void property="maxCapacity">
-      <string>null</string>
+      <string>Ingrese la Descripcion</string>
      </void>
      <void property="name">
-      <string>Ingrese el nombre</string>
+      <string>Ingrese la id</string>
      </void>
     </object>
    </void>
    <void method="add">
     <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Evento">
      <void property="description">
-      <string>40</string>
+      <string>Fpptbañ</string>
      </void>
      <void property="encargado">
-      <string>24-02-2024</string>
+      <string>Yo</string>
      </void>
      <void property="fecha">
-      <string>Homero</string>
+      <string>Hpy</string>
      </void>
      <void property="id">
-      <string>Isotopos vs Shellbiville</string>
+      <string>23232</string>
+     </void>
+     <void property="maxCapacity">
+      <string>4</string>
      </void>
      <void property="name">
-      <string>3</string>
+      <string>Chamipois</string>
      </void>
     </object>
    </void>
@@ -111,32 +114,32 @@
    <void method="add">
     <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
      <void property="estado">
-      <string>main</string>
+      <string>OK</string>
      </void>
      <void property="evento">
       <string>main</string>
      </void>
      <void property="fechaDeSolicitud">
-      <string>main</string>
+      <string>hoy</string>
      </void>
      <void property="id">
       <string>232</string>
      </void>
      <void property="usuario">
-      <string>omar</string>
+      <string>1212</string>
      </void>
     </object>
    </void>
    <void method="add">
     <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
      <void property="estado">
-      <string>Ingrese el estado</string>
+      <string>Ingrese el evento</string>
      </void>
      <void property="evento">
       <string>Ingrese el estado</string>
      </void>
      <void property="fechaDeSolicitud">
-      <string>Ingrese el estado</string>
+      <string>Ingrese la fecha</string>
      </void>
      <void property="id">
       <string>Ingrese la id</string>
@@ -149,19 +152,19 @@
    <void method="add">
     <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
      <void property="estado">
-      <string>Activa</string>
+      <string>Omar</string>
      </void>
      <void property="evento">
-      <string>2</string>
+      <string>Ok</string>
      </void>
      <void property="fechaDeSolicitud">
-      <string>4/05/2024</string>
+      <string>Hoy</string>
      </void>
      <void property="id">
-      <string>3</string>
+      <string>Omar</string>
      </void>
      <void property="usuario">
-      <string>23</string>
+      <string>Main</string>
      </void>
     </object>
    </void>
@@ -170,7 +173,7 @@
    <void method="add">
     <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
      <void property="email">
-      <string>2323</string>
+      <string>2323232</string>
      </void>
      <void property="id">
       <string>1212</string>
@@ -183,65 +186,26 @@
    <void method="add">
     <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
      <void property="email">
-      <string>Ingrese la id</string>
+      <string>asdasd</string>
      </void>
      <void property="id">
-      <string>Ingrese el nombre</string>
+      <string>asdasda</string>
      </void>
      <void property="name">
-      <string>Ingrese la id</string>
+      <string>asdasda</string>
      </void>
     </object>
    </void>
    <void method="add">
     <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
      <void property="email">
-      <string>lisa@Simpson.com</string>
+      <string>SKFOSKDOSKD</string>
      </void>
      <void property="id">
-      <string>23</string>
+      <string>Omarr</string>
      </void>
      <void property="name">
-      <string>Lisa</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
-     <void property="email">
-      <string>sdsdsds@grd</string>
-     </void>
-     <void property="id">
-      <string>Omarsdsdsd</string>
-     </void>
-     <void property="name">
-      <string>nicolas</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
-     <void property="email">
-      <string>Bustos</string>
-     </void>
-     <void property="id">
-      <string>Osorio</string>
-     </void>
-     <void property="name">
-      <string>Nicolas</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
-     <void property="email">
-      <string>asdasdasda</string>
-     </void>
-     <void property="id">
-      <string>1029292</string>
-     </void>
-     <void property="name">
-      <string>Santaigo</string>
+      <string>211212</string>
      </void>
     </object>
    </void>

@@ -5,7 +5,7 @@ public record EventoDto(
         String name,
         String description,
         String fecha,
-        String maxCapcity,
+        String maxCapacity,
         String encargado) {
 
 }

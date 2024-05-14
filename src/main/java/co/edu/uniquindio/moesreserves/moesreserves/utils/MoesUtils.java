@@ -18,7 +18,7 @@ public class MoesUtils {
         Reserva reserva = new Reserva();
 
         reserva.setId("232");
-        reserva.setUsuario("omar");
+        reserva.setUsuario("1212");
         reserva.setEvento("main");
         reserva.setFechaDeSolicitud("hoy");
         reserva.setEstado("OK");
@@ -39,7 +39,12 @@ public class MoesUtils {
         usuario.setId("1212");
         usuario.setName("2323");
         usuario.setEmail("2323232");
+        usuario.addReserve(reserva);
+        usuario.setListaReservas(usuario.getListaReservasUsuario());
         moesReserves.getListaUsuarios().add(usuario);
+
+
+        System.out.println(usuario.getListaReservasUsuario());
 
 
         return moesReserves;

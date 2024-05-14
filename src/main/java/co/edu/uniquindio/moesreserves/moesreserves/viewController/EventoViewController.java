@@ -85,7 +85,7 @@ public class EventoViewController {
     private void initDataBinding() {
         tcName.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().name()));
         tcId.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().id()));
-        tcMax.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().maxCapcity()));
+        tcMax.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().maxCapacity()));
         tcDescription.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().description()));
         tcEncargado.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().encargado()));
         tcFecha.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().fecha()));
@@ -106,7 +106,7 @@ public class EventoViewController {
         if(eventoSeleccionado != null){
             txtName.setText(eventoSeleccionado.name());
             txtId.setText(eventoSeleccionado.id());
-            txtMax.setText(eventoSeleccionado.maxCapcity());
+            txtMax.setText(eventoSeleccionado.maxCapacity());
             txtDescription.setText(eventoSeleccionado.description());
             txtEncargado.setText(eventoSeleccionado.encargado());
             txtFecha.setText(eventoSeleccionado.fecha());
@@ -229,7 +229,7 @@ public class EventoViewController {
             mensaje += "El id es invalido \n" ;
         if(eventoDto.fecha() == null || eventoDto.fecha().equals(""))
             mensaje += "La fecha es invalida \n" ;
-        if(eventoDto.maxCapcity() == null || eventoDto.maxCapcity().equals(""))
+        if(eventoDto.maxCapacity() == null || eventoDto.maxCapacity().equals(""))
             mensaje += "La capacidad es invalida \n" ;
         if(eventoDto.description() == null || eventoDto.description().equals(""))
             mensaje += "La descripcion es invalida \n" ;

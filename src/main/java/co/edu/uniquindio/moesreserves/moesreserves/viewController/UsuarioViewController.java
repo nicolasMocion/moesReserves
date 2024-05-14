@@ -1,7 +1,9 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
 import co.edu.uniquindio.moesreserves.moesreserves.controller.UsuarioController;
+import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.ReservaDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.moesreserves.moesreserves.model.Reserva;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.beans.property.SimpleDoubleProperty;
@@ -14,6 +16,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.Alert.AlertType;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
@@ -21,6 +24,9 @@ public class UsuarioViewController {
     UsuarioController usuarioControllerService;
     ObservableList<UsuarioDto> listaUsuariosDto = FXCollections.observableArrayList();
     UsuarioDto usuarioSeleccionado;
+
+    @FXML
+    private ComboBox<String> resevesList;
 
     @FXML
     private Button btnActualizar;
@@ -67,6 +73,7 @@ public class UsuarioViewController {
         tableUsuarios.getItems().clear();
         tableUsuarios.setItems(listaUsuariosDto);
         listenerSelection();
+
     }
 
     private void initDataBinding() {
@@ -83,6 +90,15 @@ public class UsuarioViewController {
         tableUsuarios.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
             usuarioSeleccionado = newSelection;
             mostrarInformacionUsuario(usuarioSeleccionado);
+
+
+            if (usuarioSeleccionado != null) {
+                ArrayList<ReservaDto> reservas = usuarioSeleccionado.listaReservasUsuario();
+                String[] reservesId = getReservesId(reservas);
+                resevesList.getItems().clear(); // Clear previous items
+                resevesList.getItems().addAll(reservesId); // Add new items
+            }
+
         });
     }
 
@@ -91,6 +107,7 @@ public class UsuarioViewController {
             txtNameu.setText(usuarioSeleccionado.name());
             txtIdu.setText(usuarioSeleccionado.id());
             txtCorreoEu.setText(usuarioSeleccionado.email());
+
         }
     }
 
@@ -182,10 +199,14 @@ public class UsuarioViewController {
     }
 
     private UsuarioDto construirUsuarioDto() {
+
         return new UsuarioDto(
                 txtNameu.getText(),
                 txtIdu.getText(),
-                txtCorreoEu.getText()
+                txtCorreoEu.getText(),
+                null
+
+
         );
     }
     private void limpiarCamposUsuario() {
@@ -229,6 +250,22 @@ public class UsuarioViewController {
         } else {
             return false;
         }
+    }
+
+
+    private String[] getReservesId(ArrayList<ReservaDto> reservas){
+
+        String[] reservasId = new String[reservas.size()];
+
+        for (int i = 0; i < reservas.size() ; i++) {
+
+            reservasId[i] = reservas.get(i).getId();
+
+        }
+
+        return reservasId;
+
+
     }
 
 
