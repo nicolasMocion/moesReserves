@@ -47,22 +47,45 @@ public class BehaviorSelectViewController {
     private void loadWindow(String fxmlFile) {
         try {
 
-            System.out.println(user);
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MoesApplication.class.getResource(fxmlFile));
+            if(fxmlFile.equals("myReserves.fxml")){
 
-            loader.setControllerFactory(c -> {
-                MyReservesViewController controller = new MyReservesViewController();
-                controller.setUser(user);
-                return controller;
-            });
+                System.out.println(user);
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(MoesApplication.class.getResource(fxmlFile));
 
-            AnchorPane root = loader.load();
-            MyReservesViewController controller2 = loader.getController();
-            controller2.setUser(user);
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
+                loader.setControllerFactory(c -> {
+                    MyReservesViewController controller = new MyReservesViewController();
+                    controller.setUser(user);
+                    return controller;
+                });
+
+                AnchorPane root = loader.load();
+                MyReservesViewController controller2 = loader.getController();
+                controller2.setUser(user);
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.show();
+
+            } else if (fxmlFile.equals("createReserve.fxml")) {
+                System.out.println(user);
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(MoesApplication.class.getResource(fxmlFile));
+
+                loader.setControllerFactory(c -> {
+                    CreateReserveViewController controller = new CreateReserveViewController();
+                    controller.setUser(user);
+                    return controller;
+                });
+
+                AnchorPane root = loader.load();
+                CreateReserveViewController controller2 = loader.getController();
+                controller2.setUser(user);
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.show();
+            }
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }

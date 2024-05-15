@@ -352,3 +352,33 @@ May 13, 2024 7:17:30 PM co.edu.uniquindio.moesreserves.moesreserves.utils.Archiv
 INFO: agregarEvento,Se agrego el empleadoChamipois,2024-05-13
 May 13, 2024 7:17:46 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
 INFO: inicioSesión,Inicio de sesión,2024-05-13
+May 14, 2024 10:21:43 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-14
+May 14, 2024 10:28:13 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarUsuario,Se agrego el empleadoOmar,2024-05-14
+May 14, 2024 10:29:02 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarUsuario,Se agrego el empleadonicolas,2024-05-14
+May 14, 2024 11:02:35 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-14
+May 14, 2024 11:04:44 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-14
+May 14, 2024 11:06:15 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-14
+May 14, 2024 11:10:46 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-14
+May 14, 2024 11:18:00 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-14
+May 14, 2024 11:22:06 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-14
+May 14, 2024 11:25:09 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-14
+May 14, 2024 11:31:03 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-14
+May 14, 2024 11:32:39 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-14
+May 14, 2024 11:34:46 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-14
+May 14, 2024 11:34:56 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoasda,2024-05-14
+May 14, 2024 11:38:18 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-14

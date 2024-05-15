@@ -8,4 +8,8 @@ public record EventoDto(
         String maxCapacity,
         String encargado) {
 
+    public String getId() {
+        return id;
+    }
+
 }

@@ -69,37 +69,6 @@ public class CrearUsuarioViewController {
 
     Properties properties = loadProperties("src/main/resources/Login.properties");
 
-    private void initDataBinding() {
-        tcNameu.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().name()));
-        tcIdu.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().id()));
-        tcCorreoEu.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().email()));
-
-    }
-    private void obtenerUsuarios() {
-        listaUsuariosDto.addAll(usuarioControllerService.obtenerUsuarios());
-    }
-
-    private void listenerSelection() {
-        tableUsuarios.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
-            usuarioSeleccionado = newSelection;
-            mostrarInformacionUsuario(usuarioSeleccionado);
-        });
-    }
-
-    private void mostrarInformacionUsuario(UsuarioDto usuarioSeleccionado) {
-        if(usuarioSeleccionado != null){
-            txtNameu.setText(usuarioSeleccionado.name());
-            txtIdu.setText(usuarioSeleccionado.id());
-            txtCorreoEu.setText(usuarioSeleccionado.email());
-        }
-    }
-
-    @FXML
-    void nuevoUsuarioAction(ActionEvent event) {
-        txtNameu.setText("Ingrese el nombre");
-        txtIdu.setText("Ingrese la id");
-        txtCorreoEu.setText("Ingrese el correo");
-    }
 
     @FXML
     void agregarUsuarioAction(ActionEvent event) {

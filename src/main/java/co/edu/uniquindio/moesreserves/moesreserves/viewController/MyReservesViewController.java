@@ -1,6 +1,7 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
 import co.edu.uniquindio.moesreserves.moesreserves.controller.ReservaController;
+import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.EventoDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.ReservaDto;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

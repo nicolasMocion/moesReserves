@@ -5,53 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82a08aa1-606d-4a17-b5b9-4b7b4529ecaa" name="Changes" comment="Uusarios Done, Eventos fixed, new windows and logins completed">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/resourceBundles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/AdminLoginViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/CreateReserveViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/EmployeeAdminSelectorViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/EmployeeLoginViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/MyReservesViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Mis-reservas-5-13-2024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Seleccione-ingreso-5-12-2024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/ingreso.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Login.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Login_Ja.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Login_admin.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Login_employee.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/EmployeeAdminSelector.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/EmployeeLogin.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/adminLogin.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/createReserve.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/myReserves.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/MainMoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/MainMoes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/controller/ModelFactoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/controller/ModelFactoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/controller/EventoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/controller/EventoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/dto/EventoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/dto/EventoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/dto/ReservaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/dto/ReservaDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/dto/UsuarioDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/dto/UsuarioDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/mappers/MoesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/mappers/MoesMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/MoesReserves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/MoesReserves.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/services/IUsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/services/IUsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/utils/MoesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/utils/MoesUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/BehaviorSelectViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/BehaviorSelectViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/CrearUsuarioViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/CrearUsuarioViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/EventoViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/EventoViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/LoginViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/LoginViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/MoesSelectViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/MoesSelectViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/UsuarioViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/UsuarioViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoEmpleados.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoEmpleados.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoEventos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoEventos.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoReservas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoReservas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/CreateReserveViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/CreateReserveViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/MyReservesViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/MyReservesViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Login.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Login.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoUsuarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoUsuarios.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Persistencia/log/MoesLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Persistencia/log/MoesLog.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Persistencia/model.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Persistencia/model.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/BehaviorSelect.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/BehaviorSelect.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/CrearUsuario.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/CrearUsuario.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/UsuarioView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/UsuarioView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/createReserve.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/createReserve.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +73,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/nicolas/Documents/MoesR",
+    "last_opened_file_path": "/Users/nicolas/Documents/MoesReBack",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -180,6 +146,7 @@
       <workItem from="1715576892986" duration="5150000" />
       <workItem from="1715582062170" duration="5053000" />
       <workItem from="1715636003933" duration="9901000" />
+      <workItem from="1715743275172" duration="4383000" />
     </task>
     <task id="LOCAL-00001" summary="persistencia creada para todas las entidades">
       <option name="closed" value="true" />
@@ -228,12 +195,6 @@
           <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/MyReservesViewController.java</url>
-          <line>21</line>
-          <properties field="reservaSeleccionado" class="co.edu.uniquindio.moesreserves.moesreserves.viewController.MyReservesViewController" />
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>

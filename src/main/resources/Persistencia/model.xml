@@ -168,6 +168,25 @@
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
+     <void property="estado">
+      <string>Pendiente</string>
+     </void>
+     <void property="evento">
+      <string>121212</string>
+     </void>
+     <void property="fechaDeSolicitud">
+      <string>asd</string>
+     </void>
+     <void property="id">
+      <string>asda</string>
+     </void>
+     <void property="usuario">
+      <string>1212</string>
+     </void>
+    </object>
+   </void>
   </void>
   <void property="listaUsuarios">
    <void method="add">
@@ -206,6 +225,32 @@
      </void>
      <void property="name">
       <string>211212</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
+     <void property="email">
+      <string>asasa</string>
+     </void>
+     <void property="id">
+      <string>Osoxxx</string>
+     </void>
+     <void property="name">
+      <string>Omar</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
+     <void property="email">
+      <string>asdasd</string>
+     </void>
+     <void property="id">
+      <string>osorio</string>
+     </void>
+     <void property="name">
+      <string>nicolas</string>
      </void>
     </object>
    </void>
