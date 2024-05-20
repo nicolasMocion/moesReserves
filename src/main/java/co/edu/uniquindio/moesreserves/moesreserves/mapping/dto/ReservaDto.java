@@ -6,9 +6,9 @@ import co.edu.uniquindio.moesreserves.moesreserves.model.Evento;
 
 public record ReservaDto(
         String id,
-        String fechaDeSolicitud,
         String usuario,
         String evento,
+        String fechaDeSolicitud,
         String estado
 ) {
 
@@ -19,8 +19,6 @@ public record ReservaDto(
     public String getUser(){
         return usuario;
     }
-
-
 
 
 }

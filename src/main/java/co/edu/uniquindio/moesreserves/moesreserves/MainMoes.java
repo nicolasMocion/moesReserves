@@ -26,10 +26,11 @@ public class MainMoes {
 
         ReservaDto reservaDto = new ReservaDto(
                 "Omar",
-                "Hoy",
                 "Main",
-                "Ok",
-                "Omar"
+                "Final champions",
+                "Main",
+                "Ok"
+
         );
 
         reserva.add(reservaDto);
@@ -45,8 +46,8 @@ public class MainMoes {
 
         UsuarioDto usuarioDto = new UsuarioDto(
 
-                "211212",
                 "Omarr",
+                "O12323",
                 "SKFOSKDOSKD",
                 reserva
 

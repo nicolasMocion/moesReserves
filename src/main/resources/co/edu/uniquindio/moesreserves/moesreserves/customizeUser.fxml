@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="480.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.moesreserves.moesreserves.viewController.CustomizeUserViewController">
+        <AnchorPane layoutY="99.0" minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="736.0">
+            <children>
+                <Label layoutX="27.0" layoutY="87.0" text="Nombre:" />
+                <Label layoutX="431.0" layoutY="96.0" text="Id:" />
+                <Label layoutX="27.0" layoutY="145.0" text="Correo Electronico:" />
+                <TextField fx:id="txtNameu" layoutX="145.0" layoutY="83.0" prefHeight="25.0" prefWidth="251.0" />
+                <TextField fx:id="txtIdu" layoutX="473.0" layoutY="91.0" prefHeight="25.0" prefWidth="251.0" />
+                <TextField fx:id="txtCorreoEu" layoutX="145.0" layoutY="141.0" prefHeight="25.0" prefWidth="251.0" />
+                <Separator layoutX="13.0" layoutY="217.0" prefHeight="2.0" prefWidth="711.0" />
+            </children></AnchorPane>
+   <Button fx:id="bttnEliminar" layoutX="443.0" layoutY="408.0" mnemonicParsing="false" onAction="#eliminarUsuarioAction" prefHeight="27.0" prefWidth="117.0" text="Eliminar Cuenta" />
+          <Button fx:id="btnActualizar" layoutX="185.0" layoutY="414.0" mnemonicParsing="false" onAction="#actualizarUsuarioAction" prefHeight="27.0" prefWidth="100.0" text="Actualizar" />
+   <ImageView fitHeight="150.0" fitWidth="603.0" layoutX="45.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+
+</AnchorPane>

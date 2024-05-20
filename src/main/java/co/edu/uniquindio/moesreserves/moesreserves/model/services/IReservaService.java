@@ -9,7 +9,6 @@ import co.edu.uniquindio.moesreserves.moesreserves.exceptions.ReservaException;
 import java.util.ArrayList;
 
 public interface IReservaService {
-    Reserva crearReserva(String id, Usuario usuario, Evento evento, String fechaDeSolicitud, Estado estado) throws ReservaException;
 
     Reserva crearReserva(String id, String usuario, String evento, String fechaDeSolicitud, String estado) throws ReservaException;
 

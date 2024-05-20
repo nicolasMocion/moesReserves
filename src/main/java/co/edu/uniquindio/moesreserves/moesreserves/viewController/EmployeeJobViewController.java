@@ -1,7 +1,13 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
+import co.edu.uniquindio.moesreserves.moesreserves.controller.EmpleadoController;
+import co.edu.uniquindio.moesreserves.moesreserves.controller.EventoController;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.ReservaController;
+import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.EmpleadoDto;
+import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.EventoDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.ReservaDto;
+import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.moesreserves.moesreserves.model.Evento;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.beans.property.SimpleStringProperty;
@@ -10,12 +16,33 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 
+import java.util.ArrayList;
 import java.util.Optional;
 
-public class ReservaViewController {
+public class EmployeeJobViewController {
     ReservaController reservaControllerService;
+
+    EventoController eventoControllerService;
+
+    EmpleadoController empleadoControllerService;
+
+    ObservableList<ReservaDto> employeeListaReservasDto = FXCollections.observableArrayList();
+
     ObservableList<ReservaDto> listaReservasDto = FXCollections.observableArrayList();
+
+    ObservableList<EventoDto> listaEventosDto = FXCollections.observableArrayList();
+
+    ObservableList<EmpleadoDto> listaEmpleadosDto = FXCollections.observableArrayList();
     ReservaDto reservaSeleccionado;
+
+    private String employee;
+
+    ArrayList<EventoDto> employeeEvent = new ArrayList<>();
+
+    public void setEmployee(String employee) {
+        this.employee = employee;
+    }
+
 
     @FXML
     private Button btnActualizar;
@@ -64,14 +91,19 @@ public class ReservaViewController {
     @FXML
     void initialize() {
         reservaControllerService = new ReservaController();
+        eventoControllerService = new EventoController();
+        empleadoControllerService = new EmpleadoController();
+        setEmployee(this.employee);
         intiView();
     }
 
     private void intiView() {
         initDataBinding();
         obtenerReservas();
+        employeeEvent = getEmployeeEvent(listaEventosDto);
+        employeeListaReservasDto = filterReserves(listaReservasDto, employeeEvent, employeeListaReservasDto);
         tableReservas.getItems().clear();
-        tableReservas.setItems(listaReservasDto);
+        tableReservas.setItems(employeeListaReservasDto);
         listenerSelection();
     }
 
@@ -84,8 +116,11 @@ public class ReservaViewController {
 
 
     }
+
     private void obtenerReservas() {
         listaReservasDto.addAll(reservaControllerService.obtenerReservas());
+        listaEventosDto.addAll(eventoControllerService.obtenerEventos());
+        listaEmpleadosDto.addAll(empleadoControllerService.obtenerEmpleados());
     }
 
     private void listenerSelection() {
@@ -96,7 +131,7 @@ public class ReservaViewController {
     }
 
     private void mostrarInformacionReserva(ReservaDto reservaSeleccionado) {
-        if(reservaSeleccionado != null){
+        if (reservaSeleccionado != null) {
             txtId.setText(reservaSeleccionado.id());
             txtFecha.setText(reservaSeleccionado.fechaDeSolicitud());
             txtEvento.setText(reservaSeleccionado.evento());
@@ -134,15 +169,15 @@ public class ReservaViewController {
         //1. Capturar los datos
         ReservaDto reservaDto = construirReservaDto();
         //2. Validar la información
-        if(datosValidos(reservaDto)){
-            if(reservaControllerService.agregarReserva(reservaDto)){
+        if (datosValidos(reservaDto)) {
+            if (reservaControllerService.agregarReserva(reservaDto)) {
                 listaReservasDto.add(reservaDto);
                 mostrarMensaje("Notificación reserva", "reserva creada", "La reserva se ha creado con éxito", AlertType.INFORMATION);
                 limpiarCamposReserva();
-            }else{
+            } else {
                 mostrarMensaje("Notificación reserva", "reserva no creada", "la reserva no se ha creado con éxito", AlertType.ERROR);
             }
-        }else{
+        } else {
             mostrarMensaje("Notificación reserva", "reserva no creada", "Los datos ingresados son invalidos", AlertType.ERROR);
         }
 
@@ -150,20 +185,20 @@ public class ReservaViewController {
 
     private void eliminarReserva() {
         boolean reservaEliminado = false;
-        if(reservaSeleccionado != null){
-            if(mostrarMensajeConfirmacion("¿Estas seguro de elmininar al reserva?")){
+        if (reservaSeleccionado != null) {
+            if (mostrarMensajeConfirmacion("¿Estas seguro de elmininar al reserva?")) {
                 reservaEliminado = reservaControllerService.eliminarReserva(reservaSeleccionado.id());
-                if(reservaEliminado == true){
+                if (reservaEliminado == true) {
                     listaReservasDto.remove(reservaSeleccionado);
                     reservaSeleccionado = null;
                     tableReservas.getSelectionModel().clearSelection();
                     limpiarCamposReserva();
                     mostrarMensaje("Notificación reserva", "reserva eliminada", "La reserva se ha eliminado con éxito", AlertType.INFORMATION);
-                }else{
+                } else {
                     mostrarMensaje("Notificación reserva", "reserva no eliminada", "La reserva no se puede eliminar", AlertType.ERROR);
                 }
             }
-        }else{
+        } else {
             mostrarMensaje("Notificación reserva", "reserva no seleccionada", "Seleccionado una reserva de la lista", AlertType.WARNING);
         }
     }
@@ -174,20 +209,20 @@ public class ReservaViewController {
         String cedulaActual = reservaSeleccionado.id();
         ReservaDto reservaDto = construirReservaDto();
         //2. verificar el reserva seleccionado
-        if(reservaSeleccionado != null){
+        if (reservaSeleccionado != null) {
             //3. Validar la información
-            if(datosValidos(reservaSeleccionado)){
-                clienteActualizado = reservaControllerService.actualizarReserva(cedulaActual,reservaDto);
-                if(clienteActualizado){
+            if (datosValidos(reservaSeleccionado)) {
+                clienteActualizado = reservaControllerService.actualizarReserva(cedulaActual, reservaDto);
+                if (clienteActualizado) {
                     listaReservasDto.remove(reservaSeleccionado);
                     listaReservasDto.add(reservaDto);
                     tableReservas.refresh();
                     mostrarMensaje("Notificación reserva", "reserva actualizado", "El reserva se ha actualizado con éxito", AlertType.INFORMATION);
                     limpiarCamposReserva();
-                }else{
+                } else {
                     mostrarMensaje("Notificación reserva", "reserva no actualizado", "El reserva no se ha actualizado con éxito", AlertType.INFORMATION);
                 }
-            }else{
+            } else {
                 mostrarMensaje("Notificación reserva", "reserva no creado", "Los datos ingresados son invalidos", AlertType.ERROR);
             }
 
@@ -218,20 +253,20 @@ public class ReservaViewController {
 
     private boolean datosValidos(ReservaDto reservaDto) {
         String mensaje = "";
-        if(reservaDto.id() == null || reservaDto.id().equals(""))
-            mensaje += "El id es invalido \n" ;
-        if(reservaDto.fechaDeSolicitud() == null || reservaDto.fechaDeSolicitud() .equals(""))
-            mensaje += "La fecha es invalida \n" ;
-        if(reservaDto.usuario() == null || reservaDto.usuario().equals(""))
-            mensaje += "El usuario es invalido \n" ;
-        if(reservaDto.evento() == null || reservaDto.evento() .equals(""))
-            mensaje += "El evento es invalido \n" ;
-        if(reservaDto.estado() == null || reservaDto.estado() .equals(""))
-            mensaje += "El estado es invalido \n" ;
-        if(mensaje.equals("")){
+        if (reservaDto.id() == null || reservaDto.id().equals(""))
+            mensaje += "El id es invalido \n";
+        if (reservaDto.fechaDeSolicitud() == null || reservaDto.fechaDeSolicitud().equals(""))
+            mensaje += "La fecha es invalida \n";
+        if (reservaDto.usuario() == null || reservaDto.usuario().equals(""))
+            mensaje += "El usuario es invalido \n";
+        if (reservaDto.evento() == null || reservaDto.evento().equals(""))
+            mensaje += "El evento es invalido \n";
+        if (reservaDto.estado() == null || reservaDto.estado().equals(""))
+            mensaje += "El estado es invalido \n";
+        if (mensaje.equals("")) {
             return true;
-        }else{
-            mostrarMensaje("Notificación cliente","Datos invalidos",mensaje, AlertType.WARNING);
+        } else {
+            mostrarMensaje("Notificación cliente", "Datos invalidos", mensaje, AlertType.WARNING);
             return false;
         }
     }
@@ -258,6 +293,40 @@ public class ReservaViewController {
     }
 
 
+    public ObservableList<ReservaDto> filterReserves(ObservableList<ReservaDto> listaReservasDto, ArrayList<EventoDto> event, ObservableList<ReservaDto> listaUserReservasDto) {
 
+        for (int i = 0; i < event.size(); i++) {
+
+            String eventE = event.get(i).name();
+
+            for (int j = 0; j < listaReservasDto.size(); j++) {
+
+                if (listaReservasDto.get(j).evento().equals(eventE)) {
+
+                    listaUserReservasDto.add(listaReservasDto.get(j));
+                }
+            }
+        }
+
+        return listaUserReservasDto;
+    }
+
+
+    private ArrayList<EventoDto> getEmployeeEvent(ObservableList<EventoDto> listaEventosDto){
+
+        ArrayList<EventoDto> currentE = new ArrayList<>();
+
+        for (int i = 0; i < listaEventosDto.size() ; i++) {
+
+            if(listaEventosDto.get(i).encargado().equals(this.employee)){
+
+                currentE.add(listaEventosDto.get(i));
+
+            }
+
+        }
+        return currentE;
+
+    }
 
 }

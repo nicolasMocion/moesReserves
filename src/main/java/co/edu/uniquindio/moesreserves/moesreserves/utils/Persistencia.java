@@ -56,7 +56,7 @@ public class Persistencia {
         // TODO Auto-generated method stub
         String contenido = "";
         for (Evento evento : listaEventos) {
-            contenido += evento.getName() + "@@" + evento.getId() + "@@" + evento.getDescription() + "@@" + evento.getFecha()
+            contenido += evento.getId() + "@@" + evento.getName() + "@@" + evento.getDescription() + "@@" + evento.getFecha()
                     + "@@" + evento.getMaxCapacity() + "@@" + evento.getEncargado() + "\n";
         }
         ArchivoUtil.guardarArchivo(RUTA_ARCHIVO_EVENTOS, contenido, false);
@@ -77,8 +77,8 @@ public class Persistencia {
         // TODO Auto-generated method stub
         String contenido = "";
         for (Usuario usuario : listaUsuarios) {
-            contenido += usuario.getName() + "@@" + usuario.getId() + "@@" +
-                    "@@" + usuario.getEmail() + "\n";
+            System.out.println(usuario.getName());
+            contenido += usuario.getName() + "@@" + usuario.getId() + "@@" + usuario.getEmail() + "\n";
         }
         ArchivoUtil.guardarArchivo(RUTA_ARCHIVO_USUARIOS, contenido, false);
     }
@@ -87,14 +87,11 @@ public class Persistencia {
         // TODO Auto-generated method stub
         String contenido = "";
         for (Reserva reserva : listaReservas) {
-            contenido += reserva.getId() + "@@" + reserva.getUsuario() + "@@" + reserva.getEvento() + "@@" + reserva.getFechaDeSolicitud() + "@@" +
-                    "@@" + reserva.getEstado() + "\n";
+            contenido += reserva.getId() + "@@" + reserva.getUsuario() + "@@" + reserva.getEvento() + "@@" + reserva.getFechaDeSolicitud() + "@@" + reserva.getEstado() + "\n";
         }
         ArchivoUtil.guardarArchivo(RUTA_ARCHIVO_RESERVAS, contenido, false);
     }
-
-
-//	----------------------LOADS------------------------
+    //	----------------------LOADS------------------------
 
     /**
      * @param
@@ -147,8 +144,8 @@ public class Persistencia {
             reserva.setId(linea.split("@@")[0]);
             reserva.setUsuario(linea.split("@@")[1]);
             reserva.setEvento(linea.split("@@")[2]);
-            reserva.setFechaDeSolicitud(linea.split("@@")[2]);
-            reserva.setEstado(linea.split("@@")[2]);
+            reserva.setFechaDeSolicitud(linea.split("@@")[3]);
+            reserva.setEstado(linea.split("@@")[4]);
             reservas.add(reserva);
         }
         return reservas;
@@ -170,18 +167,14 @@ public class Persistencia {
             linea = contenido.get(i);
 
             Usuario usuario = new Usuario();
-            usuario.setId(linea.split("@@")[0]);
-            usuario.setName(linea.split("@@")[1]);
-            usuario.setEmail(linea.split("@@")[1]);
+            usuario.setName(linea.split("@@")[0]);
+            usuario.setId(linea.split("@@")[1]);
+            usuario.setEmail(linea.split("@@")[2]);
 
             usuarios.add(usuario);
         }
         return usuarios;
     }
-
-
-    //------------------------------------SERIALIZACIÓN  y XML
-
 
     public static MoesReserves cargarRecursoMoesReservesBinario() {
 

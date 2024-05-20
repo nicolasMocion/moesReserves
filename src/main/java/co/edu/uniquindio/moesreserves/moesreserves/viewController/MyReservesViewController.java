@@ -1,8 +1,11 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
 import co.edu.uniquindio.moesreserves.moesreserves.controller.ReservaController;
+import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.EmpleadoDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.EventoDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.ReservaDto;
+import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.moesreserves.moesreserves.model.Evento;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.beans.property.SimpleStringProperty;
@@ -135,11 +138,11 @@ public class MyReservesViewController {
         }
     }
 
-    public ObservableList<ReservaDto> filterReserves(ObservableList<ReservaDto> listaReservasDto, String user, ObservableList<ReservaDto> listaUserReservasDto){
+    public ObservableList<ReservaDto> filterReserves(ObservableList<ReservaDto> listaReservasDto, String user, ObservableList<ReservaDto> listaUserReservasDto) {
 
         for (int i = 0; i < listaReservasDto.size(); i++) {
 
-            if (listaReservasDto.get(i).getUser().equals(user)){
+            if (listaReservasDto.get(i).getUser().equals(user)) {
 
                 listaUserReservasDto.add(listaReservasDto.get(i));
             }
@@ -148,5 +151,6 @@ public class MyReservesViewController {
         return listaUserReservasDto;
 
     }
+
 
 }

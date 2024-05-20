@@ -1,3 +1,2 @@
-Champions@@121212@@Hola@@hoy@@3@@Omar
-Ingrese la id@@Ingrese el nombre@@Ingrese la capacidad@@Ingrese el encargado@@Ingrese la Descripcion@@Ingrese la fecha
-Chamipois@@23232@@Fpptbañ@@Hpy@@4@@Yo
+2@@Moto GP portugal@@7th race @@20/06/2024@@7000@@Carl
+3@@Moto Gp Cataluña@@fecha 7@@30/08/2022@@700@@Jonhson

@@ -4,20 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a08aa1-606d-4a17-b5b9-4b7b4529ecaa" name="Changes" comment="Uusarios Done, Eventos fixed, new windows and logins completed">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="82a08aa1-606d-4a17-b5b9-4b7b4529ecaa" name="Changes" comment="User Can now make reserves">
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/controller/Service/BoundedSemaphore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/CustomizeUserViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/EmployeeJobViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/customizeUser.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/employeeJob.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/controller/EventoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/controller/EventoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/dto/EventoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/dto/EventoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/MainMoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/MainMoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/controller/ModelFactoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/controller/ModelFactoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/controller/Service/IModelFactoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/controller/Service/IModelFactoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/dto/ReservaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/dto/ReservaDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/dto/UsuarioDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/dto/UsuarioDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/mappers/MoesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/mapping/mappers/MoesMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/MoesReserves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/MoesReserves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/services/IReservaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/model/services/IReservaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/utils/Persistencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/utils/Persistencia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/BehaviorSelectViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/BehaviorSelectViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/CrearUsuarioViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/CrearUsuarioViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/CreateReserveViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/CreateReserveViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/EmployeeLoginViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/EmployeeLoginViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/EventoViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/EventoViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/MyReservesViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/MyReservesViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/ReservaViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/ReservaViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/UsuarioViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/UsuarioViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Login.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Login.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Login_employee.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Login_employee.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoEmpleados.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoEmpleados.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoEventos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoEventos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoReservas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoReservas.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoUsuarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Persistencia/archivos/archivoUsuarios.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Persistencia/log/MoesLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Persistencia/log/MoesLog.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Persistencia/model.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Persistencia/model.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/createReserve.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/createReserve.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/EmployeeLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/EmployeeLogin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/EventoView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/EventoView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/ReservaView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/edu/uniquindio/moesreserves/moesreserves/ReservaView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +167,16 @@
       <workItem from="1715576892986" duration="5150000" />
       <workItem from="1715582062170" duration="5053000" />
       <workItem from="1715636003933" duration="9901000" />
-      <workItem from="1715743275172" duration="4383000" />
+      <workItem from="1715743275172" duration="4754000" />
+      <workItem from="1715797451594" duration="1461000" />
+      <workItem from="1715909414925" duration="599000" />
+      <workItem from="1715955052010" duration="598000" />
+      <workItem from="1716081839344" duration="8111000" />
+      <workItem from="1716091537789" duration="10303000" />
+      <workItem from="1716101873630" duration="6631000" />
+      <workItem from="1716137636748" duration="10337000" />
+      <workItem from="1716153448705" duration="9879000" />
+      <workItem from="1716170356065" duration="5264000" />
     </task>
     <task id="LOCAL-00001" summary="persistencia creada para todas las entidades">
       <option name="closed" value="true" />
@@ -164,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714953449856</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="User Can now make reserves">
+      <option name="closed" value="true" />
+      <created>1715748030716</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715748030716</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +224,8 @@
     <MESSAGE value="persistencia creada para todas las entidades" />
     <MESSAGE value="Conexion a ventanas realizada" />
     <MESSAGE value="Uusarios Done, Eventos fixed, new windows and logins completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uusarios Done, Eventos fixed, new windows and logins completed" />
+    <MESSAGE value="User Can now make reserves" />
+    <option name="LAST_COMMIT_MESSAGE" value="User Can now make reserves" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -195,10 +234,32 @@
           <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/controller/ReservaController.java</url>
+          <line>22</line>
+          <properties class="co.edu.uniquindio.moesreserves.moesreserves.controller.ReservaController" method="eliminarReserva">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/EmployeeJobViewController.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/EmployeeJobViewController.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/UsuarioViewController.java" line="85">
+      <configuration name="Application">
+        <watch expression="listaUsuariosDto.get(0)" />
+      </configuration>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/co/edu/uniquindio/moesreserves/moesreserves/viewController/UsuarioViewController.java" line="91">
         <watch expression="((UsuarioDto)((com.sun.javafx.collections.ObservableListWrapper)((UsuarioViewController)this).listaUsuariosDto).get(0)).listaReservas" language="JAVA" custom="com.sun.javafx.collections.ObservableListWrapper,co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.UsuarioDto,co.edu.uniquindio.moesreserves.moesreserves.viewController.UsuarioViewController" />
       </inline-watch>
     </watches-manager>

@@ -33,7 +33,7 @@ public class BehaviorSelectViewController {
     void initialize() {
         viewReserves.setOnAction(this::handleViewReserveButton);
         reserveBttn.setOnAction(this::handleReservationButton);
-        //accountBttn.setOnAction(this::handleUserButton);
+        accountBttn.setOnAction(this::handleAccountButton);
     }
 
     private void handleViewReserveButton(ActionEvent event) {
@@ -41,6 +41,9 @@ public class BehaviorSelectViewController {
     }
     private void handleReservationButton(ActionEvent event) {
         loadWindow("createReserve.fxml");
+    }
+    private void handleAccountButton(ActionEvent event) {
+        loadWindow("customizeUser.fxml");
     }
 
 
@@ -83,8 +86,25 @@ public class BehaviorSelectViewController {
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
                 stage.show();
-            }
 
+            } else if (fxmlFile.equals("customizeUser.fxml")) {
+                System.out.println(user);
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(MoesApplication.class.getResource(fxmlFile));
+
+                loader.setControllerFactory(c -> {
+                    CustomizeUserViewController controller = new CustomizeUserViewController();
+                    controller.setUser(user);
+                    return controller;
+                });
+
+                AnchorPane root = loader.load();
+                CustomizeUserViewController controller3 = loader.getController();
+                controller3.setUser(user);
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.show();
+            }
 
         } catch (IOException e) {
             e.printStackTrace();

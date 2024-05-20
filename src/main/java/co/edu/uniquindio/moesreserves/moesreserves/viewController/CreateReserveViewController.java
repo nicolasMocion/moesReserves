@@ -32,9 +32,11 @@ public class CreateReserveViewController {
 
     ReservaController reservaControllerService;
 
+    UsuarioController usuarioControllerService;
+
     EventoController eventoControllerService;
     ObservableList<ReservaDto> listaReservasDto = FXCollections.observableArrayList();
-
+    ObservableList<UsuarioDto> listaUsuarioDto = FXCollections.observableArrayList();
     ObservableList<EventoDto> listaEventosDto = FXCollections.observableArrayList();
 
     ReservaDto reservaSeleccionado;
@@ -56,19 +58,20 @@ public class CreateReserveViewController {
     void initialize() {
         reservaControllerService = new ReservaController();
         eventoControllerService = new EventoController();
+        usuarioControllerService = new UsuarioController();
 
         obtenerReservas();
 
-        String[] eventosId = getEventosId(listaEventosDto);
-        eventosList.getItems().addAll(eventosId);
+        String[] eventosName = getEventosId(listaEventosDto);
+        eventosList.getItems().addAll(eventosName);
     }
 
     private void obtenerReservas() {
         listaReservasDto.addAll(reservaControllerService.obtenerReservas());
         listaEventosDto.addAll(eventoControllerService.obtenerEventos());
+        listaUsuarioDto.addAll(usuarioControllerService.obtenerUsuarios());
 
     }
-
 
     @FXML
     void agregarReservaAction(ActionEvent event) {
@@ -83,6 +86,8 @@ public class CreateReserveViewController {
         if(datosValidos(reservaDto)){
             if(reservaControllerService.agregarReserva(reservaDto)){
                 listaReservasDto.add(reservaDto);
+                UsuarioDto current = getUserId(listaUsuarioDto);
+                current.getReserveList().add(reservaDto);
                 mostrarMensaje("Notificación reserva", "reserva creada", "La reserva se ha creado con éxito", Alert.AlertType.INFORMATION);
                 limpiarCamposReserva();
             }else{
@@ -98,9 +103,9 @@ public class CreateReserveViewController {
         String selectedChoice = eventosList.getValue();
         return new ReservaDto(
                 txtId.getText(),
-                txtFecha.getText(),
                 this.user,
                 selectedChoice,
+                txtFecha.getText(),
                 "Pendiente"
         );
     }
@@ -153,21 +158,39 @@ public class CreateReserveViewController {
 
     private String[] getEventosId(ObservableList<EventoDto> eventos){
 
-        String[] eventosId = new String[eventos.size()];
+        String[] eventosName = new String[eventos.size()];
 
         for (int i = 0; i < eventos.size() ; i++) {
 
-            eventosId[i] = eventos.get(i).getId();
+            eventosName[i] = eventos.get(i).name();
 
         }
 
-        return eventosId;
-
+        return eventosName;
 
     }
 
+    private UsuarioDto getUserId(ObservableList<UsuarioDto> usuarioCurrent){
+
+        UsuarioDto currentU = null;
+
+        boolean isValid = false;
+
+        for (int i = 0; i < usuarioCurrent.size() && !isValid; i++) {
+
+            if(usuarioCurrent.get(i).getId().equals(this.user)){
 
 
+                currentU = usuarioCurrent.get(i);
+                isValid = true;
 
+            }
+
+        }
+
+        return currentU;
+
+
+    }
 
 }

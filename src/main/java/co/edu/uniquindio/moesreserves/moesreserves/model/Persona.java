@@ -2,8 +2,8 @@ package co.edu.uniquindio.moesreserves.moesreserves.model;
 
 public class Persona {
 
-    private String id;
     private String name;
+    private String id;
     private String email;
 
     public Persona() {

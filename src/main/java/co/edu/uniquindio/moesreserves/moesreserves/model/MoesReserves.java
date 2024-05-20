@@ -19,7 +19,7 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
 
     public MoesReserves(){
 
-    }
+        }
 
     public ArrayList<Reserva> getListaReservas() {
         return listaReservas;
@@ -54,7 +54,7 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
     }
 
     @Override
-    public Empleado crearEmpleado(String id, String name, String email) throws EmpleadoException {
+    public Empleado crearEmpleado(String name, String id, String email) throws EmpleadoException {
         Empleado nuevoEmpleado = null;
         boolean empleadoExiste = verificarEmpleadoExistente(id);
         if(empleadoExiste){
@@ -79,8 +79,8 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
         if(empleadoActual == null)
             throw new EmpleadoException("El empleado a actualizar no existe");
         else{
-            empleadoActual.setId(empleado.getName());
-            empleadoActual.setName(empleado.getId());
+            empleadoActual.setId(empleado.getId());
+            empleadoActual.setName(empleado.getName());
             empleadoActual.setEmail(empleado.getEmail());
             return true;
         }
@@ -137,7 +137,7 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
     }
 
     @Override
-    public Usuario crearUsuario(String id, String name, String email, ArrayList<Reserva> reservas) throws UsuarioException {
+    public Usuario crearUsuario(String name, String id, String email, ArrayList<Reserva> reservas) throws UsuarioException {
         Usuario nuevoUsuario = null;
         boolean usuarioExiste = verificarUsuarioExistente(id);
         if(usuarioExiste){
@@ -163,8 +163,8 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
         if(usuarioActual == null)
             throw new UsuarioException("El Usuario a actualizar no existe");
         else{
-            usuarioActual.setName(usuario.getId());
-            usuarioActual.setId(usuario.getName());
+            usuarioActual.setId(usuario.getId());
+            usuarioActual.setName(usuario.getName());
             usuarioActual.setEmail(usuario.getEmail());
             return true;
         }
@@ -178,7 +178,7 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
         if(usuario == null)
             throw new UsuarioException("El usuario a eliminar no existe");
         else{
-            getListaEmpleados().remove(usuario);
+            getListaUsuarios().remove(usuario);
             isDeleted = true;
         }
         return isDeleted;
@@ -188,7 +188,7 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
     public Usuario obtenerUsuario(String id){
         Usuario usuarioEncontrado = null;
         for (Usuario usuario : getListaUsuarios()) {
-            if(usuario.getId().equalsIgnoreCase(id)){
+            if(usuario.getId().equals(id)){
                 usuarioEncontrado = usuario;
                 break;
             }
@@ -313,12 +313,6 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
         return eventoEncontrado;
     }
 
-
-    @Override
-    public Reserva crearReserva(String id, Usuario usuario, Evento evento, String fechaDeSolicitud, Estado estado) throws ReservaException {
-        return null;
-    }
-
     @Override
     public Reserva crearReserva(String id, String usuario, String evento, String fechaDeSolicitud, String estado) throws ReservaException{
         Reserva nuevoReserva = null;
@@ -348,9 +342,10 @@ public class MoesReserves implements IEmpleadoService, IUsuarioService, IEventSe
         else{
             reservaActual.setId(reserva.getId());
             reservaActual.setUsuario(reserva.getUsuario());
-            reservaActual.setEstado(reserva.getEstado());
-            reservaActual.setFechaDeSolicitud(reserva.getFechaDeSolicitud());
             reservaActual.setEvento(reserva.getEvento());
+            reservaActual.setFechaDeSolicitud(reserva.getFechaDeSolicitud());
+            reservaActual.setEstado(reserva.getEstado());
+
             return true;
         }
     }

@@ -30,14 +30,13 @@ public class EmployeeLoginViewController {
 
     EmpleadoController empleadoControllerService;
 
+    private String user;
+
     @FXML
     private Button loginBttn;
 
     @FXML
     private TextField Idretriever;
-
-    @FXML
-    private TextField passwordRetriever;
 
 
     @FXML
@@ -59,15 +58,25 @@ public class EmployeeLoginViewController {
 
     public void loginAction() {
         String enteredId = Idretriever.getText().trim();
-        String enteredPassword = passwordRetriever.getText().trim();
 
-        if (empleados.containsKey(enteredId) && empleados.getProperty(enteredId).equals(enteredPassword)) {
+        user = enteredId;
+
+        if (empleados.containsKey(enteredId)) {
             System.out.println("Login successful!");
 
             try {
                 FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(MoesApplication.class.getResource("MoesView.fxml"));
+                loader.setLocation(MoesApplication.class.getResource("employeeJob.fxml"));
+
+                loader.setControllerFactory(c -> {
+                    EmployeeJobViewController controller = new EmployeeJobViewController();
+                    controller.setEmployee(user);
+                    return controller;
+                });
+
                 AnchorPane root = loader.load();
+                EmployeeJobViewController controller2 = loader.getController();
+                controller2.setEmployee(user);
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
                 stage.show();
@@ -85,7 +94,6 @@ public class EmployeeLoginViewController {
 
 
             Idretriever.clear();
-            passwordRetriever.clear();
         }
     }
 
@@ -94,6 +102,9 @@ public class EmployeeLoginViewController {
         loginAction();
     }
 
+    public String getUser() {
+        return user;
+    }
 
 
 

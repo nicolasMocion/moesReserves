@@ -1,5 +1,6 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
+import co.edu.uniquindio.moesreserves.moesreserves.controller.ReservaController;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.UsuarioController;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.ReservaDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.UsuarioDto;
@@ -22,8 +23,12 @@ import java.util.ResourceBundle;
 
 public class UsuarioViewController {
     UsuarioController usuarioControllerService;
+
+    ReservaController reservaControllerService;
     ObservableList<UsuarioDto> listaUsuariosDto = FXCollections.observableArrayList();
     UsuarioDto usuarioSeleccionado;
+
+    ObservableList<ReservaDto> listaReservasDto = FXCollections.observableArrayList();
 
     @FXML
     private ComboBox<String> resevesList;
@@ -64,6 +69,7 @@ public class UsuarioViewController {
     @FXML
     void initialize() {
         usuarioControllerService = new UsuarioController();
+        reservaControllerService = new ReservaController();
         intiView();
     }
 
@@ -84,6 +90,7 @@ public class UsuarioViewController {
     }
     private void obtenerUsuarios() {
         listaUsuariosDto.addAll(usuarioControllerService.obtenerUsuarios());
+        listaReservasDto.addAll(reservaControllerService.obtenerReservas());
     }
 
     private void listenerSelection() {
@@ -93,8 +100,9 @@ public class UsuarioViewController {
 
 
             if (usuarioSeleccionado != null) {
-                ArrayList<ReservaDto> reservas = usuarioSeleccionado.listaReservasUsuario();
-                String[] reservesId = getReservesId(reservas);
+
+                String currentUserId = usuarioSeleccionado.getId();
+                ArrayList<String> reservesId = getReservesId(listaReservasDto, currentUserId);
                 resevesList.getItems().clear(); // Clear previous items
                 resevesList.getItems().addAll(reservesId); // Add new items
             }
@@ -174,38 +182,44 @@ public class UsuarioViewController {
 
     private void actualizarUsuario() {
         boolean clienteActualizado = false;
-        //1. Capturar los datos
-        String cedulaActual = usuarioSeleccionado.id();
+        // 1. Capturar los datos
+        String cedulaActual = usuarioSeleccionado.getId();
         UsuarioDto usuarioDto = construirUsuarioDto();
-        //2. verificar el usuario seleccionado
-        if(usuarioSeleccionado != null){
-            //3. Validar la información
-            if(datosValidos(usuarioSeleccionado)){
-                clienteActualizado = usuarioControllerService.actualizarUsuario(cedulaActual,usuarioDto);
-                if(clienteActualizado){
+
+        System.out.println("Cedula Actual: " + cedulaActual);
+        System.out.println("Usuario DTO - Name: " + usuarioDto.name() + ", ID: " + usuarioDto.id());
+
+        // 2. Verificar el usuario seleccionado
+        if (usuarioSeleccionado != null) {
+            // 3. Validar la información del nuevo usuarioDto
+            if (datosValidos(usuarioDto)) {
+                clienteActualizado = usuarioControllerService.actualizarUsuario(cedulaActual, usuarioDto);
+                if (clienteActualizado) {
                     listaUsuariosDto.remove(usuarioSeleccionado);
                     listaUsuariosDto.add(usuarioDto);
                     tableUsuarios.refresh();
                     mostrarMensaje("Notificación usuario", "usuario actualizado", "El usuario se ha actualizado con éxito", AlertType.INFORMATION);
                     limpiarCamposUsuario();
-                }else{
+                } else {
                     mostrarMensaje("Notificación usuario", "usuario no actualizado", "El usuario no se ha actualizado con éxito", AlertType.INFORMATION);
                 }
-            }else{
+            } else {
                 mostrarMensaje("Notificación usuario", "usuario no creado", "Los datos ingresados son invalidos", AlertType.ERROR);
             }
-
         }
     }
 
     private UsuarioDto construirUsuarioDto() {
 
+        System.out.println("Construyendo UsuarioDto - Name: " + txtNameu.getText() + ", ID: " + txtIdu.getText() + ", Email: " + txtCorreoEu.getText());
+
+
         return new UsuarioDto(
+
                 txtNameu.getText(),
                 txtIdu.getText(),
                 txtCorreoEu.getText(),
                 null
-
 
         );
     }
@@ -253,18 +267,19 @@ public class UsuarioViewController {
     }
 
 
-    private String[] getReservesId(ArrayList<ReservaDto> reservas){
+    private ArrayList<String> getReservesId(ObservableList<ReservaDto> reservas, String currentId){
 
-        String[] reservasId = new String[reservas.size()];
+        ArrayList<String> reservasId = new ArrayList<>();
 
         for (int i = 0; i < reservas.size() ; i++) {
 
-            reservasId[i] = reservas.get(i).getId();
+            if((reservas.get(i).getUser()).equals(currentId)){
+
+                reservasId.add(reservas.get(i).getId());
+            }
 
         }
-
         return reservasId;
-
 
     }
 

@@ -1,7 +1,11 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
+import co.edu.uniquindio.moesreserves.moesreserves.controller.EmpleadoController;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.EventoController;
+import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.EmpleadoDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.EventoDto;
+import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.moesreserves.moesreserves.model.Empleado;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.beans.property.SimpleStringProperty;
@@ -16,7 +20,10 @@ import java.util.Optional;
 public class EventoViewController {
 
     EventoController eventoControllerService;
+
+    EmpleadoController empleadoControllerService;
     ObservableList<EventoDto> listaEventosDto = FXCollections.observableArrayList();
+    ObservableList<EmpleadoDto> listaEmpleadoDto = FXCollections.observableArrayList();
     EventoDto eventoSeleccionado;
 
     @FXML
@@ -32,6 +39,9 @@ public class EventoViewController {
     private Button btnNuevo;
 
     @FXML
+    private ComboBox<String> eventSelection;
+
+    @FXML
     private TextField txtName;
 
     @FXML
@@ -43,8 +53,6 @@ public class EventoViewController {
     @FXML
     private TextField txtMax;
 
-    @FXML
-    private TextField txtEncargado;
 
     @FXML
     private TextField txtFecha;
@@ -71,7 +79,14 @@ public class EventoViewController {
     @FXML
     void initialize() {
         eventoControllerService = new EventoController();
+        empleadoControllerService = new EmpleadoController();
+
         intiView();
+
+        String[] empleadosId = getEmpleadosId(listaEmpleadoDto);
+        eventSelection.getItems().addAll(empleadosId);
+
+
     }
 
     private void intiView() {
@@ -93,6 +108,7 @@ public class EventoViewController {
     }
     private void obtenerEventos() {
         listaEventosDto.addAll(eventoControllerService.obtenerEventos());
+        listaEmpleadoDto.addAll(empleadoControllerService.obtenerEmpleados());
     }
 
     private void listenerSelection() {
@@ -108,7 +124,6 @@ public class EventoViewController {
             txtId.setText(eventoSeleccionado.id());
             txtMax.setText(eventoSeleccionado.maxCapacity());
             txtDescription.setText(eventoSeleccionado.description());
-            txtEncargado.setText(eventoSeleccionado.encargado());
             txtFecha.setText(eventoSeleccionado.fecha());
 
         }
@@ -119,7 +134,6 @@ public class EventoViewController {
         txtId.setText("Ingrese la id");
         txtMax.setText("Ingrese la capacidad");
         txtDescription.setText("Ingrese la Descripcion");
-        txtEncargado.setText("Ingrese el encargado");
         txtFecha.setText("Ingrese la fecha");
 
     }
@@ -144,6 +158,7 @@ public class EventoViewController {
         if(datosValidos(eventoDto)){
             if(eventoControllerService.agregarEvento(eventoDto)){
                 listaEventosDto.add(eventoDto);
+
                 mostrarMensaje("Notificación evento", "Evento creado", "El evento se ha creado con éxito", AlertType.INFORMATION);
                 limpiarCamposEvento();
             }else{
@@ -160,11 +175,12 @@ public class EventoViewController {
         if(eventoSeleccionado != null){
             if(mostrarMensajeConfirmacion("¿Estas seguro de elmininar al evento?")){
                 eventoEliminado = eventoControllerService.eliminarEvento(eventoSeleccionado.id());
-                if(eventoEliminado == true){
+                if(eventoEliminado){
                     listaEventosDto.remove(eventoSeleccionado);
                     eventoSeleccionado = null;
                     tableEventos.getSelectionModel().clearSelection();
                     limpiarCamposEvento();
+
                     mostrarMensaje("Notificación evento", "evento eliminado", "El evento se ha eliminado con éxito", AlertType.INFORMATION);
                 }else{
                     mostrarMensaje("Notificación evento", "evento no eliminado", "El evento no se puede eliminar", AlertType.ERROR);
@@ -202,13 +218,14 @@ public class EventoViewController {
     }
 
     private EventoDto construirEventoDto() {
+        String selectedChoice = eventSelection.getValue();
         return new EventoDto(
-                txtName.getText(),
                 txtId.getText(),
-                txtMax.getText(),
-                txtEncargado.getText(),
+                txtName.getText(),
                 txtDescription.getText(),
-                txtFecha.getText()
+                txtFecha.getText(),
+                txtMax.getText(),
+                selectedChoice
         );
     }
     private void limpiarCamposEvento() {
@@ -264,14 +281,19 @@ public class EventoViewController {
         }
     }
 
+    private String[] getEmpleadosId(ObservableList<EmpleadoDto> empleados){
 
+        String[] empleadosId = new String[empleados.size()];
 
+        for (int i = 0; i < empleados.size() ; i++) {
 
+            empleadosId[i] = empleados.get(i).id();
 
+        }
 
+        return empleadosId;
 
-
-
+    }
 
 
 }
