@@ -1,6 +1,9 @@
 package co.edu.uniquindio.moesreserves.moesreserves;
 
+import co.edu.uniquindio.moesreserves.moesreserves.config.RabbitFactory;
+import co.edu.uniquindio.moesreserves.moesreserves.config.RabbitMQConsumer;
 import co.edu.uniquindio.moesreserves.moesreserves.viewController.*;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,13 +19,17 @@ public class MoesApplication extends Application {
     private BorderPane rootLayout;
     @Override
     public void start(Stage stage) throws IOException {
+        RabbitFactory rabbitFactory = new RabbitFactory();
+        RabbitMQConsumer consumer = new RabbitMQConsumer(rabbitFactory.getConnectionFactory(), "XML-update");
+        consumer.start();
         this.primaryStage = stage;
         this.primaryStage.setTitle("Moes Reserves");
         mostrarVentanaPrincipal();
     }
 
-    public void mostrarVentanaPrincipal() {
+    public void mostrarVentanaPrincipal(){
         try{
+
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MoesApplication.class.getResource("MoesSelect.fxml"));
             AnchorPane rootLayout = (AnchorPane) loader.load();

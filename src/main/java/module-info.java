@@ -5,6 +5,8 @@ module co.edu.uniquindio.moesreserves.moesreserves {
     requires org.controlsfx.controls;
     requires java.desktop;
     requires java.logging;
+    requires com.rabbitmq.client;
+    requires com.fasterxml.jackson.databind;
 
     opens co.edu.uniquindio.moesreserves.moesreserves to javafx.fxml;
     exports co.edu.uniquindio.moesreserves.moesreserves;

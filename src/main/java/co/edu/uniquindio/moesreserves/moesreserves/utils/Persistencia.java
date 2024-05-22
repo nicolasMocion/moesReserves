@@ -17,8 +17,6 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 
-
-
 public class Persistencia {
 
 
@@ -126,8 +124,8 @@ public class Persistencia {
         for (int i = 0; i < contenido.size(); i++) {
             linea = contenido.get(i);
             Empleado empleado = new Empleado();
-            empleado.setId(linea.split("@@")[0]);
-            empleado.setName(linea.split("@@")[1]);
+            empleado.setName(linea.split("@@")[0]);
+            empleado.setId(linea.split("@@")[1]);
             empleado.setEmail(linea.split("@@")[2]);
             empleados.add(empleado);
         }

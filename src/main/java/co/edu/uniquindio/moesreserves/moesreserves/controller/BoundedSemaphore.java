@@ -1,4 +1,4 @@
-package co.edu.uniquindio.moesreserves.moesreserves.controller.Service;
+package co.edu.uniquindio.moesreserves.moesreserves.controller;
 
 public class BoundedSemaphore {
     private int senial = 0;
@@ -7,8 +7,6 @@ public class BoundedSemaphore {
     public BoundedSemaphore(int upperBound){
         this.bound = upperBound;
     }
-
-
 
     public synchronized void ocupar() throws InterruptedException{
         while(this.senial == bound){

@@ -1,5 +1,7 @@
-Omar@@123@@saksaoks
+Omar@@1234@@saksaoks
 Thompson@@Homero@@homero@gmail.com
 Jonhson@@Carl@@Johnson@gmial.com
 Smith@@Lenny@@lennySmith
 Nicolas@@Osorio@@asdasd
+23@@Burns@@burns@gmail.com
+Ingrese el nombre@@Ingrese la id@@Ingrese el correo

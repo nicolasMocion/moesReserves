@@ -10,6 +10,7 @@ public class EventoController implements IEventoControllerService {
     ModelFactoryController modelFactoryController;
 
     public EventoController(){
+        System.out.println("Llamando al singleton desde EventoServiceController");
         modelFactoryController = ModelFactoryController.getInstance();
     }
 

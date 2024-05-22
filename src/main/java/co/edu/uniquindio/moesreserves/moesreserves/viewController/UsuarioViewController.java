@@ -1,10 +1,14 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
+
 import co.edu.uniquindio.moesreserves.moesreserves.controller.ReservaController;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.UsuarioController;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.ReservaDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.moesreserves.moesreserves.config.*;
 import co.edu.uniquindio.moesreserves.moesreserves.model.Reserva;
+import com.rabbitmq.client.*;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.beans.property.SimpleDoubleProperty;
@@ -12,6 +16,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.Alert.AlertType;
@@ -21,13 +26,20 @@ import java.util.ArrayList;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
+import static co.edu.uniquindio.moesreserves.moesreserves.utils.Constantes.QUEUE_NUEVA_PUBLICACION;
+
 public class UsuarioViewController {
     UsuarioController usuarioControllerService;
+    RabbitFactory rabbitFactory;
+
+    Boolean restart = true;
+
+    ConnectionFactory connectionFactory;
+    Thread hiloServicioConsumer1;
 
     ReservaController reservaControllerService;
     ObservableList<UsuarioDto> listaUsuariosDto = FXCollections.observableArrayList();
     UsuarioDto usuarioSeleccionado;
-
     ObservableList<ReservaDto> listaReservasDto = FXCollections.observableArrayList();
 
     @FXML
@@ -98,7 +110,6 @@ public class UsuarioViewController {
             usuarioSeleccionado = newSelection;
             mostrarInformacionUsuario(usuarioSeleccionado);
 
-
             if (usuarioSeleccionado != null) {
 
                 String currentUserId = usuarioSeleccionado.getId();
@@ -109,6 +120,7 @@ public class UsuarioViewController {
 
         });
     }
+
 
     private void mostrarInformacionUsuario(UsuarioDto usuarioSeleccionado) {
         if(usuarioSeleccionado != null){
@@ -128,6 +140,7 @@ public class UsuarioViewController {
 
     @FXML
     void agregarUsuarioAction(ActionEvent event) {
+        restart = false;
         crearUsuario();
     }
 
@@ -282,7 +295,6 @@ public class UsuarioViewController {
         return reservasId;
 
     }
-
 
 
 

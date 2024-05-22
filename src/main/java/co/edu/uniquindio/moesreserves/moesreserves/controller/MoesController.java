@@ -6,7 +6,7 @@ public class MoesController implements IMoesControllerService {
     ModelFactoryController modelFactoryController;
 
     public MoesController(){
-        System.out.println("Llamando al singleton desde BancoServiceController");
+        System.out.println("Llamando al singleton desde moesServiceController");
         modelFactoryController = ModelFactoryController.getInstance();
     }
 

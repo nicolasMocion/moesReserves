@@ -10,6 +10,7 @@ public class UsuarioController implements IUsuarioControllerService {
     ModelFactoryController modelFactoryController;
 
     public UsuarioController(){
+        System.out.println("Llamando al singleton desde usuarioServiceController");
         modelFactoryController = ModelFactoryController.getInstance();
     }
     public List<UsuarioDto> obtenerUsuarios() {

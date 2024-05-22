@@ -10,6 +10,7 @@ public class ReservaController implements IReservaControllerService {
     ModelFactoryController modelFactoryController;
 
     public ReservaController(){
+        System.out.println("Llamando al singleton desde ReservaServiceController");
         modelFactoryController = ModelFactoryController.getInstance();
     }
     public List<ReservaDto> obtenerReservas() {

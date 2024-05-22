@@ -8,7 +8,7 @@
       <string>saksaoks</string>
      </void>
      <void property="id">
-      <string>123</string>
+      <string>1234</string>
      </void>
      <void property="name">
       <string>Omar</string>
@@ -67,6 +67,32 @@
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Empleado">
+     <void property="email">
+      <string>burns@gmail.com</string>
+     </void>
+     <void property="id">
+      <string>Burns</string>
+     </void>
+     <void property="name">
+      <string>23</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Empleado">
+     <void property="email">
+      <string>Ingrese el correo</string>
+     </void>
+     <void property="id">
+      <string>Ingrese la id</string>
+     </void>
+     <void property="name">
+      <string>Ingrese el nombre</string>
+     </void>
+    </object>
+   </void>
   </void>
   <void property="listaEventos">
    <void method="add">
@@ -97,7 +123,7 @@
       <string>fecha 7</string>
      </void>
      <void property="encargado">
-      <string>Jonhson</string>
+      <string>Carl</string>
      </void>
      <void property="fecha">
       <string>30/08/2022</string>
@@ -159,101 +185,6 @@
       <string>Pendiente</string>
      </void>
      <void property="evento">
-      <string>1212</string>
-     </void>
-     <void property="fechaDeSolicitud">
-      <string>Final champions</string>
-     </void>
-     <void property="id">
-      <string>121212212</string>
-     </void>
-     <void property="usuario">
-      <string>dfsdf</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
-     <void property="estado">
-      <string>Pendiente</string>
-     </void>
-     <void property="evento">
-      <string>Final champions</string>
-     </void>
-     <void property="fechaDeSolicitud">
-      <string>asdasdasw</string>
-     </void>
-     <void property="id">
-      <string>asdasda</string>
-     </void>
-     <void property="usuario">
-      <string>1212</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
-     <void property="estado">
-      <string>Pendiente</string>
-     </void>
-     <void property="evento">
-      <string>121212</string>
-     </void>
-     <void property="fechaDeSolicitud">
-      <string>sdfsdf</string>
-     </void>
-     <void property="id">
-      <string>sdfsdfsssss</string>
-     </void>
-     <void property="usuario">
-      <string>1212</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
-     <void property="estado">
-      <string>Pendiente</string>
-     </void>
-     <void property="evento">
-      <string>121212</string>
-     </void>
-     <void property="fechaDeSolicitud">
-      <string>sdfsdfsf</string>
-     </void>
-     <void property="id">
-      <string>sdfsdfsdfs</string>
-     </void>
-     <void property="usuario">
-      <string>1212</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
-     <void property="estado">
-      <string>Pendiente</string>
-     </void>
-     <void property="evento">
-      <string>121212</string>
-     </void>
-     <void property="fechaDeSolicitud">
-      <string>dfdfdfdf</string>
-     </void>
-     <void property="id">
-      <string>dfdfdfd</string>
-     </void>
-     <void property="usuario">
-      <string>1212</string>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
-     <void property="estado">
-      <string>Pendiente</string>
-     </void>
-     <void property="evento">
       <string>Final champions</string>
      </void>
      <void property="fechaDeSolicitud">
@@ -289,13 +220,13 @@
    <void method="add">
     <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
      <void property="estado">
-      <string>Pendiente</string>
+      <string>confirmada</string>
      </void>
      <void property="evento">
       <string>Moto GP portugal</string>
      </void>
      <void property="fechaDeSolicitud">
-      <string>Kyou</string>
+      <string>kyou</string>
      </void>
      <void property="id">
       <string>Max in a moto??</string>
@@ -308,16 +239,35 @@
    <void method="add">
     <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
      <void property="estado">
+      <string>Ingrese el estado</string>
+     </void>
+     <void property="evento">
+      <string>Ingrese el evento</string>
+     </void>
+     <void property="fechaDeSolicitud">
+      <string>Ingrese la fecha</string>
+     </void>
+     <void property="id">
+      <string>Ingrese la id</string>
+     </void>
+     <void property="usuario">
+      <string>Ingrese el usuario</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Reserva">
+     <void property="estado">
       <string>Pendiente</string>
      </void>
      <void property="evento">
       <string>Moto GP portugal</string>
      </void>
      <void property="fechaDeSolicitud">
-      <string>next year</string>
+      <string>sdfsdf</string>
      </void>
      <void property="id">
-      <string>Max in a moto comeback</string>
+      <string>sdfsdfffff</string>
      </void>
      <void property="usuario">
       <string>verstapen</string>
@@ -361,7 +311,46 @@
       <string>verstapen</string>
      </void>
      <void property="name">
-      <string>Max</string>
+      <string>max</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
+     <void property="email">
+      <string>asdfasd</string>
+     </void>
+     <void property="id">
+      <string>perez</string>
+     </void>
+     <void property="name">
+      <string>omarx</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
+     <void property="email">
+      <string>maomasdas</string>
+     </void>
+     <void property="id">
+      <string>Vettel</string>
+     </void>
+     <void property="name">
+      <string>Sebasttian</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="co.edu.uniquindio.moesreserves.moesreserves.model.Usuario">
+     <void property="email">
+      <string>ASDASD</string>
+     </void>
+     <void property="id">
+      <string>NORRIS</string>
+     </void>
+     <void property="name">
+      <string>Lando</string>
      </void>
     </object>
    </void>
