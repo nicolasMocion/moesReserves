@@ -1,11 +1,14 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
+import co.edu.uniquindio.moesreserves.moesreserves.MoesApplication;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.ReservaController;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.EmpleadoDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.EventoDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.ReservaDto;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.UsuarioDto;
 import co.edu.uniquindio.moesreserves.moesreserves.model.Evento;
+import co.edu.uniquindio.moesreserves.moesreserves.model.MoesReserves;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.beans.property.SimpleStringProperty;
@@ -13,13 +16,17 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
+import javax.swing.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Optional;
 
 public class MyReservesViewController {
-
-
     ReservaController reservaControllerService;
     ObservableList<ReservaDto> listaReservasDto = FXCollections.observableArrayList();
     ObservableList<ReservaDto> userListaReservasDto = FXCollections.observableArrayList();
@@ -30,12 +37,11 @@ public class MyReservesViewController {
     public void setUser(String user) {
         this.user = user;
     }
-
-
     @FXML
     private Button btnEliminar;
 
-
+    @FXML
+    private Button btnGuardar;
 
     @FXML
     private TableView<ReservaDto> tableReservas;
@@ -59,6 +65,7 @@ public class MyReservesViewController {
     void initialize() {
         reservaControllerService = new ReservaController();
         setUser(this.user);
+        reservaControllerService.consumirRespuestaCliente();
         intiView();
     }
 
@@ -77,8 +84,6 @@ public class MyReservesViewController {
         tcUser.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().usuario()));
         tcEvento.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().evento()));
         tcEstado.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().estado()));
-
-
     }
     private void obtenerReservas() {
         listaReservasDto.addAll(reservaControllerService.obtenerReservas());
@@ -87,6 +92,11 @@ public class MyReservesViewController {
     @FXML
     void eliminarReservaAction(ActionEvent event) {
         eliminarReserva();
+    }
+    @FXML
+    void guardarReservaAction(ActionEvent event){
+        Stage stage = (Stage) btnGuardar.getScene().getWindow();
+        saveObservableListToCSV(userListaReservasDto, stage);
     }
 
     private void listenerSelection() {
@@ -152,5 +162,35 @@ public class MyReservesViewController {
 
     }
 
+    public static void saveObservableListToCSV(ObservableList<ReservaDto> data, Stage primaryStage) {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Save CSV File");
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV Files", "*.csv"));
+        File selectedFile = fileChooser.showSaveDialog(primaryStage);
+
+        if (selectedFile != null) {
+            try (FileWriter writer = new FileWriter(selectedFile)) {
+                // Write header
+                writer.append("Id,Usuario,Evento,Fecha,Estado\n");
+
+                // Write data
+                for (ReservaDto reserva : data) {
+                    writer.append(reserva.getId())
+                            .append(',')
+                            .append(reserva.usuario())
+                            .append(',')
+                            .append(reserva.evento())
+                            .append(',')
+                            .append(reserva.fechaDeSolicitud())
+                            .append(',')
+                            .append(reserva.estado())
+                            .append('\n');
+                }
+                System.out.println("CSV file was saved successfully!");
+            } catch (IOException e) {
+                System.err.println("An error occurred while saving the CSV file: " + e.getMessage());
+            }
+        }
+    }
 
 }

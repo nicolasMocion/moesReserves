@@ -13,12 +13,13 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import javafx.stage.Window;
+
 import java.io.IOException;
 
 public class MoesSelectViewController {
 
     private Stage primaryStage;
-
     private BorderPane rootLayout;
     @FXML
     private Button adminBttn;
@@ -33,16 +34,18 @@ public class MoesSelectViewController {
     }
 
     private void handleAdminButton(ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
         loadWindow("EmployeeAdminSelector.fxml");
+
     }
     private void handleUserButton(ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
         loadWindow("SelectUser.fxml");
     }
 
 
     private void loadWindow(String fxmlFile) {
         try {
-
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MoesApplication.class.getResource(fxmlFile));
             AnchorPane root = loader.load();

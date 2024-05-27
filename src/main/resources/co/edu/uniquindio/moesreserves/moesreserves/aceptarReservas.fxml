@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.moesreserves.moesreserves.viewController.AceptarReservasViewController">
+   <children>
+      <ImageView fitHeight="121.0" fitWidth="411.0" layoutX="84.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/Upcoming-Alert-5-25-2024.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="acceptBtn" layoutX="84.0" layoutY="227.0" mnemonicParsing="false" onAction="#aceptarAction" prefHeight="94.0" prefWidth="158.0" text="Aceptar" />
+      <Button fx:id="denyBttn" layoutX="332.0" layoutY="227.0" mnemonicParsing="false" onAction="#denegarAction" prefHeight="94.0" prefWidth="167.0" text="Denegar" />
+      <Label layoutX="221.0" layoutY="147.0" prefWidth="302.0" text="Reserva nueva!!" textAlignment="JUSTIFY">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

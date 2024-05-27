@@ -13,4 +13,6 @@ public interface IUsuarioControllerService {
     boolean eliminarUsuario(String id);
 
     boolean actualizarUsuario(String currentId, UsuarioDto usuarioDto);
+
+    void enableConsumer();
 }

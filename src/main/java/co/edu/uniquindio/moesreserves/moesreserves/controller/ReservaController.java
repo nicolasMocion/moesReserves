@@ -28,4 +28,10 @@ public class ReservaController implements IReservaControllerService {
     public boolean actualizarReserva(String currentId, ReservaDto reservaDto) {
         return modelFactoryController.actualizarReserva(currentId, reservaDto);
     }
+    @Override
+    public void consumirRespuestaCliente() {
+        modelFactoryController.consumirRespuestaCliente();
+    }
+
+
 }

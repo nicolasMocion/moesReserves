@@ -30,4 +30,9 @@ public class EmpleadoController implements IEmpleadoControllerService{
     public boolean actualizarEmpleado(String currentId, EmpleadoDto empleadoDto) {
         return modelFactoryController.actualizarEmpleado(currentId, empleadoDto);
     }
+    @Override
+    public void enableConsumer() {
+        modelFactoryController.consumirNuevaReserva();
+    }
+
 }

@@ -4,10 +4,11 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="480.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.moesreserves.moesreserves.viewController.CustomizeUserViewController">
+<AnchorPane prefHeight="526.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.moesreserves.moesreserves.viewController.CustomizeUserViewController">
         <AnchorPane layoutY="99.0" minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="736.0">
             <children>
                 <Label layoutX="27.0" layoutY="87.0" text="Nombre:" />
@@ -17,9 +18,19 @@
                 <TextField fx:id="txtIdu" layoutX="473.0" layoutY="91.0" prefHeight="25.0" prefWidth="251.0" />
                 <TextField fx:id="txtCorreoEu" layoutX="145.0" layoutY="141.0" prefHeight="25.0" prefWidth="251.0" />
                 <Separator layoutX="13.0" layoutY="217.0" prefHeight="2.0" prefWidth="711.0" />
+         <Label layoutX="412.0" layoutY="145.0" text="Nueva contraseña" />
+         <TextField fx:id="txtPass" layoutX="518.0" layoutY="141.0" prefHeight="25.0" prefWidth="192.0" />
             </children></AnchorPane>
-   <Button fx:id="bttnEliminar" layoutX="443.0" layoutY="408.0" mnemonicParsing="false" onAction="#eliminarUsuarioAction" prefHeight="27.0" prefWidth="117.0" text="Eliminar Cuenta" />
-          <Button fx:id="btnActualizar" layoutX="185.0" layoutY="414.0" mnemonicParsing="false" onAction="#actualizarUsuarioAction" prefHeight="27.0" prefWidth="100.0" text="Actualizar" />
-   <ImageView fitHeight="150.0" fitWidth="603.0" layoutX="45.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+   <Button fx:id="bttnEliminar" layoutX="428.0" layoutY="364.0" mnemonicParsing="false" onAction="#eliminarUsuarioAction" prefHeight="27.0" prefWidth="117.0" text="Eliminar Cuenta" />
+          <Button fx:id="btnActualizar" layoutX="225.0" layoutY="364.0" mnemonicParsing="false" onAction="#actualizarUsuarioAction" prefHeight="27.0" prefWidth="100.0" text="Actualizar" />
+   <ImageView fitHeight="150.0" fitWidth="603.0" layoutX="67.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../../../Images/Actualizar-cuenta-5-26-2024.png" />
+      </image></ImageView>
+   <ImageView fitHeight="193.0" fitWidth="200.0" layoutX="608.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../../../Images/kindpng_1364023.png" />
+      </image>
+   </ImageView>
 
 </AnchorPane>

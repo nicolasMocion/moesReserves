@@ -1,5 +1,7 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
+import co.edu.uniquindio.moesreserves.moesreserves.MoesApplication;
+import co.edu.uniquindio.moesreserves.moesreserves.config.RabbitMQProducer;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.EventoController;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.ReservaController;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.UsuarioController;
@@ -11,7 +13,11 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -20,7 +26,7 @@ import java.util.ArrayList;
 import java.util.Optional;
 import java.util.Properties;
 
-public class CreateReserveViewController {
+public class CreateReserveViewController extends Thread {
 
     String selectedChoice;
     private String user;
@@ -28,7 +34,6 @@ public class CreateReserveViewController {
     public void setUser(String user) {
         this.user = user;
     }
-
 
     ReservaController reservaControllerService;
 
@@ -38,9 +43,7 @@ public class CreateReserveViewController {
     ObservableList<ReservaDto> listaReservasDto = FXCollections.observableArrayList();
     ObservableList<UsuarioDto> listaUsuarioDto = FXCollections.observableArrayList();
     ObservableList<EventoDto> listaEventosDto = FXCollections.observableArrayList();
-
     ReservaDto reservaSeleccionado;
-
 
     @FXML
     private ComboBox<String> eventosList;
@@ -59,9 +62,7 @@ public class CreateReserveViewController {
         reservaControllerService = new ReservaController();
         eventoControllerService = new EventoController();
         usuarioControllerService = new UsuarioController();
-
         obtenerReservas();
-
         String[] eventosName = getEventosId(listaEventosDto);
         eventosList.getItems().addAll(eventosName);
     }
@@ -82,6 +83,7 @@ public class CreateReserveViewController {
     private void crearReserva() {
         //1. Capturar los datos
         ReservaDto reservaDto = construirReservaDto();
+        RabbitMQProducer.sendUpdateMessage("Reserva de" + reservaDto.getUser() + "a empleado");
         //2. Validar la información
         if(datosValidos(reservaDto)){
             if(reservaControllerService.agregarReserva(reservaDto)){
@@ -189,8 +191,6 @@ public class CreateReserveViewController {
         }
 
         return currentU;
-
-
     }
 
 }

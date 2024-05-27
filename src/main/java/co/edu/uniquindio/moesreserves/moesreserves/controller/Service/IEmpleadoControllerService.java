@@ -14,4 +14,6 @@ public interface IEmpleadoControllerService {
 
     boolean actualizarEmpleado(String currentId, EmpleadoDto empleadoDto);
 
+    public void enableConsumer();
+
 }

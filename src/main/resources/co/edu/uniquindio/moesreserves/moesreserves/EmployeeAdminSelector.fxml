@@ -9,12 +9,23 @@
    <children>
       <AnchorPane layoutX="21.0" layoutY="15.0" prefHeight="370.0" prefWidth="558.0">
          <children>
-            <ImageView fitHeight="231.0" fitWidth="442.0" layoutX="58.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="231.0" fitWidth="442.0" layoutX="58.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../Images/ingreso.png" />
                </image></ImageView>
-            <Button fx:id="employeeBttn" layoutX="74.0" layoutY="203.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="176.0" text="Ingreso Empleado" />
-            <Button fx:id="adminBttn" layoutX="335.0" layoutY="203.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="176.0" text="Ingreso admin" />
+            <Button fx:id="employeeBttn" layoutX="58.0" layoutY="146.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="197.0" text="Ingreso Empleado" />
+            <Button fx:id="adminBttn" layoutX="331.0" layoutY="150.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="169.0" text="Ingreso admin" />
+            <Button fx:id="backBttn" layoutX="21.0" layoutY="356.0" mnemonicParsing="false" onAction="#goBackAction" text="Atrás" />
+            <ImageView fitHeight="161.0" fitWidth="127.0" layoutX="374.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Images/200px-Fit_Tony.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="121.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Images/Squeaky-voiced_teen.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>

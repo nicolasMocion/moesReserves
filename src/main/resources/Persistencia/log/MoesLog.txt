@@ -1288,3 +1288,393 @@ May 22, 2024 10:24:57 AM co.edu.uniquindio.moesreserves.moesreserves.utils.Archi
 INFO: inicioSesión,Inicio de sesión,2024-05-22
 May 22, 2024 11:01:54 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
 INFO: inicioSesión,Inicio de sesión,2024-05-22
+May 22, 2024 11:16:19 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-22
+May 22, 2024 11:22:13 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-22
+May 24, 2024 9:22:45 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-24
+May 24, 2024 11:35:46 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-24
+May 24, 2024 11:36:36 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoSilverstone GP,2024-05-24
+May 24, 2024 11:38:08 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-24
+May 24, 2024 11:38:28 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoMax in a moto,2024-05-24
+May 24, 2024 11:51:00 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-24
+May 24, 2024 11:51:55 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-24
+May 24, 2024 11:52:22 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-24
+May 24, 2024 11:52:36 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadovxcvcxv,2024-05-24
+May 24, 2024 11:53:31 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-24
+May 24, 2024 11:53:56 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-24
+May 24, 2024 11:58:07 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-24
+May 25, 2024 12:42:18 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-25
+May 25, 2024 12:42:26 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-25
+May 25, 2024 12:42:54 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoMonaco GP 3,2024-05-25
+May 25, 2024 12:44:28 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-25
+May 25, 2024 12:44:51 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadooopoppo,2024-05-25
+May 25, 2024 12:45:39 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-25
+May 25, 2024 12:49:20 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-25
+May 25, 2024 12:49:39 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoxssxxs,2024-05-25
+May 25, 2024 12:50:03 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-25
+May 25, 2024 12:50:26 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadozczzc,2024-05-25
+May 25, 2024 10:03:48 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-25
+May 25, 2024 10:04:01 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-25
+May 25, 2024 10:04:25 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadovbbvbv,2024-05-25
+May 25, 2024 10:05:29 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-25
+May 25, 2024 10:05:48 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-25
+May 25, 2024 10:06:02 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadozczzczczcczzczc,2024-05-25
+May 25, 2024 10:09:01 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-25
+May 25, 2024 10:09:28 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadosffssffs,2024-05-25
+May 25, 2024 10:10:14 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-25
+May 25, 2024 10:10:49 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadodadsadsasd,2024-05-25
+May 26, 2024 12:08:23 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:08:32 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:08:45 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadosdfsffs,2024-05-26
+May 26, 2024 12:14:00 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:14:14 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoasfasadaad,2024-05-26
+May 26, 2024 12:14:22 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:16:06 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:17:35 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:18:15 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadofbbfbfbffb,2024-05-26
+May 26, 2024 12:24:21 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:24:39 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoadadad,2024-05-26
+May 26, 2024 12:24:44 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:26:26 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:26:55 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:27:18 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoqxq,2024-05-26
+May 26, 2024 12:28:20 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:30:12 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:31:02 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoFormula 1 monaco gP 2026,2024-05-26
+May 26, 2024 12:31:19 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:34:53 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:35:18 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoq,2024-05-26
+May 26, 2024 12:36:12 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:36:27 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:36:39 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoqqq,2024-05-26
+May 26, 2024 12:41:18 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:41:25 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 12:41:41 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoadad,2024-05-26
+May 26, 2024 12:59:13 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 1:14:28 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 1:14:52 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadosaasas,2024-05-26
+May 26, 2024 1:15:05 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 1:17:57 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 1:18:13 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 1:18:47 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleado0,2024-05-26
+May 26, 2024 1:19:58 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 1:20:10 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleado1,2024-05-26
+May 26, 2024 1:24:22 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 1:24:34 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleado2,2024-05-26
+May 26, 2024 1:24:39 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 1:25:39 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 1:25:58 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleado8,2024-05-26
+May 26, 2024 1:26:04 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 1:30:18 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 1:30:25 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 1:30:46 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleado7,2024-05-26
+May 26, 2024 2:35:02 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 2:36:04 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 2:37:06 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 2:39:21 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 2:40:28 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 2:49:31 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 3:02:31 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 3:08:29 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 3:11:58 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 3:24:17 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 3:26:11 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 3:26:30 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 3:29:38 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 3:30:13 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 3:30:52 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 3:35:08 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 3:35:38 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 3:41:33 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 3:41:54 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarUsuario,Se agrego el empleadoKrusty,2024-05-26
+May 26, 2024 3:46:40 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 4:00:02 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 4:00:32 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 4:06:38 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 4:13:10 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 4:16:50 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 4:17:30 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 4:18:14 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 4:19:14 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 4:19:25 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 4:19:40 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleado37,2024-05-26
+May 26, 2024 10:03:44 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:05:23 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:06:14 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:06:48 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:08:57 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEvento,Se agrego el empleadoF1 fecha 4,2024-05-26
+May 26, 2024 10:10:00 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:10:57 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:11:36 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarUsuario,Se agrego el empleadoCharles,2024-05-26
+May 26, 2024 10:12:38 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoPrimera reserva de Cahrles,2024-05-26
+May 26, 2024 10:14:56 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:16:30 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoNew grand prix,2024-05-26
+May 26, 2024 10:16:38 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:17:41 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:19:39 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:26:58 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:27:47 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEvento,Se agrego el empleadoFinal Champions,2024-05-26
+May 26, 2024 10:33:02 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:33:41 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoBender,2024-05-26
+May 26, 2024 10:34:51 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEvento,Se agrego el empleadoF1 Belgica,2024-05-26
+May 26, 2024 10:38:52 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:40:34 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoFry,2024-05-26
+May 26, 2024 10:45:10 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:45:33 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoFry,2024-05-26
+May 26, 2024 10:47:22 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:48:10 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:48:41 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoHomero,2024-05-26
+May 26, 2024 10:49:55 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:51:17 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoFrank,2024-05-26
+May 26, 2024 10:54:10 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:54:22 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarUsuario,Se agrego el empleadoomar,2024-05-26
+May 26, 2024 10:54:53 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoa,2024-05-26
+May 26, 2024 10:58:24 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoi,2024-05-26
+May 26, 2024 10:58:48 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoOMa,2024-05-26
+May 26, 2024 10:59:44 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 10:59:52 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadozz,2024-05-26
+May 26, 2024 11:00:21 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 11:00:24 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarUsuario,Se agrego el empleadocx,2024-05-26
+May 26, 2024 11:05:05 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 11:05:19 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoqwwqqw,2024-05-26
+May 26, 2024 11:07:26 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 11:07:31 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoec,2024-05-26
+May 26, 2024 11:07:42 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoIngrese el nombre,2024-05-26
+May 26, 2024 11:10:14 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 11:10:30 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadofsd,2024-05-26
+May 26, 2024 11:51:43 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 11:52:02 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 11:53:09 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoMax in a moto,2024-05-26
+May 26, 2024 11:53:37 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 11:54:03 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoMac will win,2024-05-26
+May 26, 2024 11:54:47 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 11:55:27 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarUsuario,Se agrego el empleadoMax,2024-05-26
+May 26, 2024 11:55:55 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoMax in a moto?,2024-05-26
+May 26, 2024 11:56:17 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 11:57:58 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-26
+May 26, 2024 11:58:34 PM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoNew max,2024-05-26
+May 27, 2024 12:00:23 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:01:09 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoMax winning ceremony,2024-05-27
+May 27, 2024 12:01:17 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:02:02 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoomommo,2024-05-27
+May 27, 2024 12:02:45 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:02:55 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:03:58 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoCharles win in Monaco,2024-05-27
+May 27, 2024 12:04:36 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoa,2024-05-27
+May 27, 2024 12:04:44 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoj,2024-05-27
+May 27, 2024 12:05:41 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:06:28 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:06:57 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoWining award,2024-05-27
+May 27, 2024 12:07:58 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoPodium reserve,2024-05-27
+May 27, 2024 12:08:53 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:09:13 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:09:34 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoSeat in moto gp,2024-05-27
+May 27, 2024 12:10:34 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:11:15 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:13:20 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:13:50 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEvento,Se agrego el empleadoFinal mundial,2024-05-27
+May 27, 2024 12:14:03 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:16:42 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:18:00 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:19:16 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:20:16 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEvento,Se agrego el empleadoPartido Baseball,2024-05-27
+May 27, 2024 12:20:50 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarEmpleado,Se agrego el empleadoFry,2024-05-27
+May 27, 2024 12:23:46 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:23:53 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27
+May 27, 2024 12:24:31 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadoReserva equipo merdedes,2024-05-27
+May 27, 2024 12:26:08 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: agregarReserva,Se agrego el empleadosegunda reserva,2024-05-27
+May 27, 2024 12:26:49 AM co.edu.uniquindio.moesreserves.moesreserves.utils.ArchivoUtil guardarRegistroLog
+INFO: inicioSesión,Inicio de sesión,2024-05-27

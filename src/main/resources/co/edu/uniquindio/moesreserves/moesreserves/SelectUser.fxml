@@ -5,15 +5,25 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.moesreserves.moesreserves.viewController.SelectUserViewController">
    <children>
-      <Button fx:id="existBttn" layoutX="65.0" layoutY="193.0" mnemonicParsing="false" prefHeight="122.0" prefWidth="208.0" text="Ingresar como usuario existente" />
-      <Button fx:id="registerBttn" layoutX="326.0" layoutY="193.0" mnemonicParsing="false" prefHeight="122.0" prefWidth="208.0" text="Registrarse" />
+      <Button fx:id="existBttn" layoutX="43.0" layoutY="171.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="238.0" text="Ingresar como usuario existente" />
+      <Button fx:id="registerBttn" layoutX="320.0" layoutY="171.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="224.0" text="Registrarse" />
       <ImageView fitHeight="150.0" fitWidth="377.0" layoutX="104.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../Images/Elija-una-opci-n-5-5-2024.png" />
          </image>
       </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="384.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/250px-Maggie_Simpson.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="166.0" fitWidth="118.0" layoutX="121.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/Homer_Simpson.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backBttn" layoutX="21.0" layoutY="356.0" mnemonicParsing="false" onAction="#goBackAction" text="Atrás" />
    </children>
 </AnchorPane>

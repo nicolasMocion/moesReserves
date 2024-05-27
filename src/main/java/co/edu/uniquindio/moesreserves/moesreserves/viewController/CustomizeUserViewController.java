@@ -1,5 +1,6 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
+import co.edu.uniquindio.moesreserves.moesreserves.MoesApplication;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.ReservaController;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.UsuarioController;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.ReservaDto;
@@ -8,8 +9,12 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -43,6 +48,9 @@ public class CustomizeUserViewController {
 
     @FXML
     private Button btnEliminar;
+
+    @FXML
+    private TextField txtPass;
 
     @FXML
     private Button btnNuevo;
@@ -88,13 +96,17 @@ public class CustomizeUserViewController {
 
     @FXML
     void eliminarUsuarioAction(ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
         eliminarUsuario();
+        goBackAction(event);
     }
 
 
     @FXML
     void actualizarUsuarioAction(ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
         actualizarUsuario();
+        goBackAction(event);
     }
 
     private void eliminarUsuario() {
@@ -119,7 +131,7 @@ public class CustomizeUserViewController {
     private void actualizarUsuario() {
         boolean usuarioActualizado = false;
         String cedulaActual = currentUsuario.id();
-        String password = properties.getProperty(currentUsuario.id());
+        String password = txtPass.getText();
         UsuarioDto upusuarioDto  = construirUsuarioDto();
 
             if(datosValidos(currentUsuario)){
@@ -276,6 +288,22 @@ public class CustomizeUserViewController {
                 current.fechaDeSolicitud(),
                 current.estado()
         );
+    }
+
+    @FXML
+    public void goBackAction(javafx.event.ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MoesApplication.class.getResource("Login.fxml"));
+            AnchorPane root = loader.load();
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

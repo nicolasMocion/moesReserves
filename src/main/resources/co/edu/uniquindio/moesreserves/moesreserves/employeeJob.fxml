@@ -44,6 +44,7 @@
                             </columns>
                         </TableView>
                         <Button fx:id="btnEliminar" layoutX="300.0" layoutY="228.0" mnemonicParsing="false" onAction="#eliminarReservaAction" prefHeight="27.0" prefWidth="100.0" text="Eliminar" />
+                        <Button fx:id="backBttn" layoutX="31.0" layoutY="216.0" mnemonicParsing="false" onAction="#goBackAction" text="Atrás" />
                     </children></AnchorPane>
             </items>
         </SplitPane>

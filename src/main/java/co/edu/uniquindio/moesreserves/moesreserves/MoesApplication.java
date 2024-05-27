@@ -19,9 +19,6 @@ public class MoesApplication extends Application {
     private BorderPane rootLayout;
     @Override
     public void start(Stage stage) throws IOException {
-        RabbitFactory rabbitFactory = new RabbitFactory();
-        RabbitMQConsumer consumer = new RabbitMQConsumer(rabbitFactory.getConnectionFactory(), "XML-update");
-        consumer.start();
         this.primaryStage = stage;
         this.primaryStage.setTitle("Moes Reserves");
         mostrarVentanaPrincipal();

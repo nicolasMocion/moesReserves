@@ -26,10 +26,28 @@ public class EmployeeAdminSelectorViewController {
         employeeBttn.setOnAction(this::handleEmployeeButton);
     }
 
+    @FXML
+    public void goBackAction(javafx.event.ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MoesApplication.class.getResource("MoesSelect.fxml"));
+            AnchorPane root = loader.load();
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     private void handleAdminButton(ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
         loadWindow("AdminLogin.fxml");
     }
     private void handleEmployeeButton(ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
         loadWindow("EmployeeLogin.fxml");
     }
 

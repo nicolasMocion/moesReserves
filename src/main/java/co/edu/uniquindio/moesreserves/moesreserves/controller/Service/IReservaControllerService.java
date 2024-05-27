@@ -15,6 +15,5 @@ public interface IReservaControllerService {
 
     boolean actualizarReserva(String currentId, ReservaDto reservaDto);
 
-
-
+    void consumirRespuestaCliente();
 }

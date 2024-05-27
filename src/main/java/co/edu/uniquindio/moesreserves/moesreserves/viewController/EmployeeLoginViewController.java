@@ -55,8 +55,23 @@ public class EmployeeLoginViewController {
             return;
         }
     }
+    @FXML
+    public void goBackAction(javafx.event.ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MoesApplication.class.getResource("EmployeeAdminSelector.fxml"));
+            AnchorPane root = loader.load();
 
-    public void loginAction() {
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void loginAction(ActionEvent event) {
         String enteredId = Idretriever.getText().trim();
 
         user = enteredId;
@@ -65,6 +80,7 @@ public class EmployeeLoginViewController {
             System.out.println("Login successful!");
 
             try {
+                ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
                 FXMLLoader loader = new FXMLLoader();
                 loader.setLocation(MoesApplication.class.getResource("employeeJob.fxml"));
 
@@ -99,7 +115,7 @@ public class EmployeeLoginViewController {
 
     @FXML
     void agregarEmpleadoAction(ActionEvent event) {
-        loginAction();
+        loginAction(event);
     }
 
     public String getUser() {

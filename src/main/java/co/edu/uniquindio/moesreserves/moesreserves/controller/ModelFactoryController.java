@@ -1,6 +1,7 @@
 package co.edu.uniquindio.moesreserves.moesreserves.controller;
 
 import co.edu.uniquindio.moesreserves.moesreserves.config.RabbitFactory;
+import co.edu.uniquindio.moesreserves.moesreserves.config.RabbitMQConsumer;
 import co.edu.uniquindio.moesreserves.moesreserves.config.RabbitMQProducer;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.Service.IModelFactoryService;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.*;
@@ -19,22 +20,19 @@ import java.util.concurrent.TimeoutException;
 
 import static co.edu.uniquindio.moesreserves.moesreserves.utils.Constantes.QUEUE_NUEVA_PUBLICACION;
 
+import static co.edu.uniquindio.moesreserves.moesreserves.utils.Constantes.QUEUE_DEFINIR_RESERVA;
 public class ModelFactoryController implements IModelFactoryService, Runnable {
-
-
     MoesReserves moesReserves;
     MoesMapper mapper = MoesMapper.INSTANCE;
     BoundedSemaphore semaphore = new BoundedSemaphore(1);
     RabbitFactory rabbitFactory;
     ConnectionFactory connectionFactory;
-
     String mensaje = "";
     int nivel = 0;
     String accion = "";
 
     Thread hilo1GuardarXml;
     Thread hilo2GuardarLog;
-
 
 
     private static class SingletonHolder {
@@ -48,6 +46,7 @@ public class ModelFactoryController implements IModelFactoryService, Runnable {
     public ModelFactoryController() {
         System.out.println("invocación clase singleton");
         try {
+            initRabbitConnection();
             cargarResourceXML();
             if (moesReserves == null) {
                 cargarDatosDesdeArchivos();
@@ -59,15 +58,20 @@ public class ModelFactoryController implements IModelFactoryService, Runnable {
             e.printStackTrace();
         }
 
-
     }
-
     private void initRabbitConnection() {
         rabbitFactory = new RabbitFactory();
         connectionFactory = rabbitFactory.getConnectionFactory();
         System.out.println("conexion establecida");
     }
-
+    public void consumirNuevaReserva(){
+        RabbitMQConsumer consumer = new RabbitMQConsumer(connectionFactory, QUEUE_NUEVA_PUBLICACION);
+        consumer.start();
+    }
+    public void consumirRespuestaCliente(){
+        RabbitMQConsumer consumer = new RabbitMQConsumer(connectionFactory, QUEUE_DEFINIR_RESERVA);
+        consumer.start();
+    }
 
     @Override
     public void run() {
@@ -81,7 +85,6 @@ public class ModelFactoryController implements IModelFactoryService, Runnable {
             Persistencia.guardaRegistroLog(mensaje, nivel, accion);
             liberar();
         }
-
     }
 
     private void cargarDatosBase() {
@@ -125,9 +128,6 @@ public class ModelFactoryController implements IModelFactoryService, Runnable {
                 registrarAccionesSistema("Se agrego el empleado" + empleado.getName(), 1, "agregarEmpleado");
                 guardarResourceXML();
                 salvarDatosPrueba();
-                RabbitMQProducer.sendUpdateMessage("Empleado agregado: " + empleadoDto.id());
-
-
             }
             return true;
         } catch (EmpleadoException e) {
@@ -224,7 +224,6 @@ public class ModelFactoryController implements IModelFactoryService, Runnable {
                 registrarAccionesSistema("Se agrego el empleado" + reserva.getId(), 1, "agregarReserva");
                 guardarResourceXML();
                 salvarDatosPrueba();
-
             }
             return true;
         } catch (ReservaException e) {
@@ -344,7 +343,6 @@ public class ModelFactoryController implements IModelFactoryService, Runnable {
     private void guardarResourceXML() {
         hilo1GuardarXml = new Thread(this);
         hilo1GuardarXml.start();
-        RabbitMQProducer.sendUpdateMessage("XML updated");
     }
 
     private void cargarResourceBinario() {
@@ -378,7 +376,5 @@ public class ModelFactoryController implements IModelFactoryService, Runnable {
             throw new RuntimeException(e);
         }
     }
-
-
 
 }

@@ -92,14 +92,15 @@ public class UsuarioViewController {
         tableUsuarios.setItems(listaUsuariosDto);
         listenerSelection();
 
+
     }
 
     private void initDataBinding() {
         tcNameu.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().name()));
         tcIdu.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().id()));
         tcCorreoEu.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().email()));
-
     }
+
     private void obtenerUsuarios() {
         listaUsuariosDto.addAll(usuarioControllerService.obtenerUsuarios());
         listaReservasDto.addAll(reservaControllerService.obtenerReservas());
@@ -114,8 +115,8 @@ public class UsuarioViewController {
 
                 String currentUserId = usuarioSeleccionado.getId();
                 ArrayList<String> reservesId = getReservesId(listaReservasDto, currentUserId);
-                resevesList.getItems().clear(); // Clear previous items
-                resevesList.getItems().addAll(reservesId); // Add new items
+                resevesList.getItems().clear();
+                resevesList.getItems().addAll(reservesId);
             }
 
         });

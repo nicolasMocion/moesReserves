@@ -33,9 +33,11 @@ public class SelectUserViewController {
     }
 
     private void handleRegisterButton(ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
         loadWindow("CrearUsuario.fxml");
     }
     private void handleExistButton(ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
         loadWindow("Login.fxml");
     }
 
@@ -46,6 +48,22 @@ public class SelectUserViewController {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MoesApplication.class.getResource(fxmlFile));
             AnchorPane root = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void goBackAction(javafx.event.ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MoesApplication.class.getResource("MoesSelect.fxml"));
+            AnchorPane root = loader.load();
+
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.show();

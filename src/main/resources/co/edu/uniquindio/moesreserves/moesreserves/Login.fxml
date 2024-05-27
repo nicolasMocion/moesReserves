@@ -28,5 +28,6 @@
             <Image url="@../../../../../Images/pngegg.png" />
          </image>
       </ImageView>
+      <Button fx:id="backBttn" layoutX="21.0" layoutY="356.0" mnemonicParsing="false" onAction="#goBackAction" text="Atrás" />
    </children>
 </AnchorPane>

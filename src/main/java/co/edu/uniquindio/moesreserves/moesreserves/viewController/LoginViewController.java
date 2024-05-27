@@ -58,7 +58,7 @@ public class LoginViewController {
         }
     }
 
-    public void loginAction() {
+    public void loginAction(ActionEvent event) {
         String enteredId = Idretriever.getText().trim();
         String enteredPassword = passwordRetriever.getText().trim();
 
@@ -68,6 +68,7 @@ public class LoginViewController {
             System.out.println("Login successful!");
 
             try {
+                ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
                 FXMLLoader loader = new FXMLLoader();
                 loader.setLocation(MoesApplication.class.getResource("BehaviorSelect.fxml"));
                 AnchorPane root = loader.load();
@@ -98,11 +99,27 @@ public class LoginViewController {
 
     @FXML
     void agregarUsuarioAction(ActionEvent event) {
-        loginAction();
+        loginAction(event);
     }
 
 
     public String getUser() {
         return user;
+    }
+
+    @FXML
+    public void goBackAction(javafx.event.ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MoesApplication.class.getResource("SelectUser.fxml"));
+            AnchorPane root = loader.load();
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

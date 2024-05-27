@@ -1,5 +1,6 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
+import co.edu.uniquindio.moesreserves.moesreserves.MoesApplication;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.EmpleadoController;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.EventoController;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.ReservaController;
@@ -13,9 +14,14 @@ import javafx.collections.ObservableList;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Optional;
 
@@ -93,6 +99,7 @@ public class EmployeeJobViewController {
         reservaControllerService = new ReservaController();
         eventoControllerService = new EventoController();
         empleadoControllerService = new EmpleadoController();
+        empleadoControllerService.enableConsumer();
         setEmployee(this.employee);
         intiView();
     }
@@ -311,7 +318,6 @@ public class EmployeeJobViewController {
         return listaUserReservasDto;
     }
 
-
     private ArrayList<EventoDto> getEmployeeEvent(ObservableList<EventoDto> listaEventosDto){
 
         ArrayList<EventoDto> currentE = new ArrayList<>();
@@ -327,6 +333,22 @@ public class EmployeeJobViewController {
         }
         return currentE;
 
+    }
+
+    @FXML
+    public void goBackAction(javafx.event.ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MoesApplication.class.getResource("MoesSelect.fxml"));
+            AnchorPane root = loader.load();
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

@@ -12,6 +12,7 @@ public class UsuarioController implements IUsuarioControllerService {
     public UsuarioController(){
         System.out.println("Llamando al singleton desde usuarioServiceController");
         modelFactoryController = ModelFactoryController.getInstance();
+
     }
     public List<UsuarioDto> obtenerUsuarios() {
         return modelFactoryController.obtenerUsuarios();
@@ -28,4 +29,9 @@ public class UsuarioController implements IUsuarioControllerService {
     public boolean actualizarUsuario(String currentId, UsuarioDto usuarioDto) {
         return modelFactoryController.actualizarUsuario(currentId, usuarioDto);
     }
+    @Override
+    public void enableConsumer() {
+         modelFactoryController.consumirRespuestaCliente();
+    }
+
 }

@@ -1,5 +1,6 @@
 package co.edu.uniquindio.moesreserves.moesreserves.viewController;
 
+import co.edu.uniquindio.moesreserves.moesreserves.MoesApplication;
 import co.edu.uniquindio.moesreserves.moesreserves.controller.UsuarioController;
 import co.edu.uniquindio.moesreserves.moesreserves.mapping.dto.UsuarioDto;
 import javafx.collections.FXCollections;
@@ -9,9 +10,13 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -73,6 +78,7 @@ public class CrearUsuarioViewController {
     @FXML
     void agregarUsuarioAction(ActionEvent event) {
         crearUsuario();
+        goBackAction(event);
     }
 
 
@@ -175,7 +181,21 @@ public class CrearUsuarioViewController {
         return properties;
     }
 
+    @FXML
+    public void goBackAction(javafx.event.ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MoesApplication.class.getResource("SelectUser.fxml"));
+            AnchorPane root = loader.load();
 
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 
 

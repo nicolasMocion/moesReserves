@@ -1,2 +1,7 @@
-2@@Moto GP portugal@@7th race @@20/06/2024@@7000@@Carl
+2@@Moto GP portugal@@7th race @@20/06/2024@@7000@@Rodriguez
 3@@Moto Gp Cataluña@@fecha 7@@30/08/2022@@700@@Carl
+1@@F1 fecha 4@@F1 Monza@@10/09/2024@@20@@Homero
+4@@Final Champions@@Final @@1/06/2024@@500000@@Lenny
+5@@F1 Belgica@@Spa frnacochamps@@05/08/2024@@5000@@Carl
+7@@Final mundial@@final del mundo futbol@@19/11/2026@@90000@@Carl
+8@@Partido Baseball@@Partido temporada regular@@04/06/2024@@100@@Carl
